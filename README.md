@@ -14,7 +14,7 @@ Url: https://lineage-dev.vercel.app/
 
 ## Others
 Other Preview URL<br />
-https://lineage-git-[branch_name]-elishawong.vercel.app/
+Url: https://lineage-git-[branch_name]-elishawong.vercel.app/
 
 
 
