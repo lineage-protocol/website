@@ -12,7 +12,6 @@ Bundles with:
 - Node 19 (v19.0.1)
 
 ## Available Scripts
-
-- `yarn`
-- `yarn start`
-- `yarn build`
+- `yarn` - Install all node dependencies for a project
+- `yarn start` - Start the development server
+- `yarn build` - Bundles the app into static files for production
