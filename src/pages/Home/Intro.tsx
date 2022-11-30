@@ -11,7 +11,7 @@ export default function Intro(props: IntroProps) {
     <div className="w-full h-screen !max-h-screen text-white">
       {/* header */}
       <div className="relative bg-gradient-to-b from-black to-[rgb(0,0,0,0)]">
-        <h1 className="tracking-[10px] pt-10 text-md sm:text-4xl p-6 font-nasalization uppercase text-center">
+        <h1 className="tracking-[10px] pt-10 text-base sm:text-4xl p-6 font-nasalization uppercase text-center">
           Lineage Protocol
         </h1>
       </div>
@@ -23,7 +23,7 @@ export default function Intro(props: IntroProps) {
           <hr className="w-1/5 border-white border-opacity-30" />
           <hr className="w-1/5 border-white border-opacity-30" />
         </div>
-        <div className="uppercase tracking-[5px] text-center">
+        <div className="uppercase tracking-[5px] text-center text-sm sm:text-base">
           The Future of Dynamic NFT
         </div>
       </div>

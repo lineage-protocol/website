@@ -99,7 +99,7 @@ export default function About(props: AboutProps) {
       </div>
 
       {/* Footer */}
-      <div className="relative flex flex-col justify-center items-center tracking-widest text-center sm:text-md text-sm">
+      <div className="relative flex flex-col justify-center items-center tracking-widest text-center sm:text-base text-sm">
         <div className="uppercase sm:block hidden">Email Us</div>
         <a href="mailto:contact@lineageprotocol.com">
           CONTACT@lineageprotocol.com

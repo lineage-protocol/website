@@ -7,7 +7,7 @@ interface AboutToolTipItemProps {
 export default function AboutToolTipItem(props: AboutToolTipItemProps) {
   return (
     <div className="w-[200px] sm:w-[300px] flex flex-col gap-2 sm:gap-3 p-3">
-      <div className="text-md sm:text-lg uppercase tracking-wide font-extrabold text-center">
+      <div className="text-base sm:text-lg uppercase tracking-wide font-extrabold text-center">
         {props.header}
       </div>
 
