@@ -76,14 +76,14 @@
   width: 10000px;
   height: 100%;
   background-position: 0px;
-  background-size: 100vw 100vh;
+  background-size: 100vh;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
 
   background-image: url("https://cdn.discordapp.com/attachments/700246187051319356/1045601429244629062/clouds_repeat1.png");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   /* z-index: 3; */
   opacity: 50%;
 
