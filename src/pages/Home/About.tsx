@@ -108,7 +108,7 @@ export default function About(props: AboutProps) {
           href="mailto:contact@lineageprotocol.com"
           className="absolute top-[195%]"
         >
-          CONTACT@lineageprotocol.com
+          contact@lineageprotocol.com
         </a>
       </div>
     </div>
