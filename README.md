@@ -1,21 +1,8 @@
 # Getting Started
+[Demo](https://lineage-main.vercel.app/)
 ## Prerequisites
 
 - Node 19 (v19.1.0)
-
-## Environments
-### Staging / Demo
-Branch: main<br />
-Url: https://lineage-main.vercel.app/
-
-### Dev
-Branch: dev<br />
-Url: https://lineage-dev.vercel.app/
-node 
-## Others
-Other Preview Url: https://lineage-git-[branch_name]-elishawong.vercel.app/
-
-
 
 ## Available Scripts
 - `yarn` - Install all node dependencies for a project
