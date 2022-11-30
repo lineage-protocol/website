@@ -28,7 +28,7 @@ export default function About(props: AboutProps) {
         md:left-[20%] md:bottom-[35%]
         left-[20%] bottom-[25%]
       `,
-      title: "Permissionless Data Mapping Network",
+      title: "Dynamic NFT",
       tooltip: {
         place: "bottom",
         header: "Dynamic NFT",
@@ -58,7 +58,7 @@ export default function About(props: AboutProps) {
         md:left-[25%] md:top-[5%]
         left-[25%] top-[5%]
       `,
-      title: "Introducing a new form of metadata management",
+      title: "Metadata management",
       tooltip: {
         place: "top",
         header: "Metadata management",
