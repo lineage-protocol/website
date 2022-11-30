@@ -17,13 +17,13 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* content */}
-      <div className="relative w-full h-[82%] flex flex-col items-center justify-center">
+      <div className="w-full h-[82%] flex flex-col items-center justify-center">
         <img alt="Lineage" src={props.image} className="mix-blend-screen" />
         <div className="w-full hidden lg:inline-flex justify-between absolute bottom-30">
           <hr className="w-1/5 border-white border-opacity-30" />
           <hr className="w-1/5 border-white border-opacity-30" />
         </div>
-        <div className="uppercase tracking-[5px] text-center text-sm sm:text-base">
+        <div className="relative uppercase tracking-[5px] text-center text-sm sm:text-base">
           The Future of Dynamic NFT
         </div>
       </div>
