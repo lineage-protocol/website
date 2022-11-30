@@ -20,8 +20,8 @@ export default function Intro(props: IntroProps) {
       <div className="w-full h-[80%] flex flex-col items-center justify-center">
         <img alt="Lineage" src={props.image} className="mix-blend-screen" />
         <div className="w-full hidden lg:inline-flex justify-between absolute bottom-30">
-          <hr className="w-1/5 border-white border-opacity-30" />
-          <hr className="w-1/5 border-white border-opacity-30" />
+          <hr className="w-1/6 border-white border-opacity-30" />
+          <hr className="w-1/6 border-white border-opacity-30" />
         </div>
         <div className="relative uppercase tracking-[5px] text-center text-sm sm:text-base">
           The Future of Dynamic NFT
@@ -29,7 +29,7 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* bounce arrow */}
-      <div className="text-center h-[20%]">
+      <div className="text-center h-[20%] flex flex-col justify-end pb-5">
         <a href="/#about">
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
