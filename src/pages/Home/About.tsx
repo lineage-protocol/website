@@ -13,12 +13,12 @@ export default function About(props: AboutProps) {
         md:right-[20%] md:bottom-[5%]
         right-[20%]
       `,
-      title: "Unlocking New NFT Utilities",
+      title: "Unlocking new NFT utilities",
       tooltip: {
         place: "bottom",
         header: "Remove the constraints",
         content:
-          "Fusce in urna non felis euismod pharetra a et turpis. Sed semper sem sed quam viverra, in dictum sapien commodo. ",
+          "NFT Collections using Lineage Protocol can now integrate seamlessly across any network. With our Myriad feature, NFTs can now have multiple “profiles” with various representations (2D/3D images) to be used for integration with different Dapps e.g. metaverse, gameFi projects etc.",
       },
     },
     {
@@ -28,12 +28,12 @@ export default function About(props: AboutProps) {
         md:left-[20%] md:bottom-[35%]
         left-[20%] bottom-[25%]
       `,
-      title: "Permissionless Data Mapping Network",
+      title: "Dynamic NFT",
       tooltip: {
         place: "bottom",
         header: "Remove the constraints",
         content:
-          "Fusce in urna non felis euismod pharetra a et turpis. Sed semper sem sed quam viverra, in dictum sapien commodo. ",
+          "Dynamic NFTs are NFTs that can adapt and change upon meeting certain conditions. For example, a game character levelling up upon defeating a number of monsters. NFTs can now be much more than just static images.",
       },
     },
     {
@@ -43,12 +43,12 @@ export default function About(props: AboutProps) {
         md:right-[20%] md:top-[32%]
         right-[20%] top-[25%]
       `,
-      title: "Gasless Network",
+      title: "Gasless network",
       tooltip: {
         place: "top",
         header: "Remove the constraints",
         content:
-          "Fusce in urna non felis euismod pharetra a et turpis. Sed semper sem sed quam viverra, in dictum sapien commodo. ",
+          "Lineage Network will be a gas-free network as we are not a smart contract based network. This also allows us to be chain agnostic, capable of connecting to all networks.",
       },
     },
     {
@@ -58,12 +58,12 @@ export default function About(props: AboutProps) {
         md:left-[25%] md:top-[5%]
         left-[25%] top-[5%]
       `,
-      title: "Introducing a new form of metadata management",
+      title: "Metadata management",
       tooltip: {
         place: "top",
         header: "Remove the constraints",
         content:
-          "Fusce in urna non felis euismod pharetra a et turpis. Sed semper sem sed quam viverra, in dictum sapien commodo. ",
+          "Lineage Explorer, a blockchain-like explorer catered to NFT metadata will introduce users to NFT metadata management. NFT metadata can now be tracked just like any other token.",
       },
     },
   ];
