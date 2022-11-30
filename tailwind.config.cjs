@@ -3,12 +3,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        nasalization: ["Nasalization"],
+        montserrat: [""],
+      },
       colors: {
         primary: "var(--primary)",
-        primaryLight: "var(--primaryLight)",
         secondary: "var(--secondary)",
-        blue: "var(--blue)",
-        lightBlue: "var(--lightBlue)",
       },
       screens: {
         sm: { min: "640px" }, // large mobiles

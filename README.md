@@ -4,15 +4,16 @@
 - Node 19 (v19.1.0)
 
 ## Environments
-Branch: dev<br />
-Url: https://lineage-dev.vercel.app/
-
+### Staging / Demo
 Branch: main<br />
 Url: https://lineage-main.vercel.app/
 
-Others
-Other Preview URL
-https://lineage-git-[branch_name]-elishawong.vercel.app/
+### Dev
+Branch: dev<br />
+Url: https://lineage-dev.vercel.app/
+
+## Others
+Other Preview Url: https://lineage-git-[branch_name]-elishawong.vercel.app/
 
 
 
