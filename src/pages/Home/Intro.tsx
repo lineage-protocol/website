@@ -8,7 +8,7 @@ interface IntroProps {
 
 export default function Intro(props: IntroProps) {
   return (
-    <div className="w-full h-screen !max-h-screen text-white">
+    <div className="w-full h-screen !max-h-screen text-white flex flex-col justify-between">
       {/* header */}
       <div className="relative bg-gradient-to-b from-black to-[rgb(0,0,0,0)]">
         <h1 className="tracking-[10px] pt-10 text-base sm:text-4xl p-6 font-nasalization uppercase text-center">
@@ -17,7 +17,7 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* content */}
-      <div className="w-full h-[82%] flex flex-col items-center justify-center">
+      <div className="w-full h-[80%] flex flex-col items-center justify-center">
         <img alt="Lineage" src={props.image} className="mix-blend-screen" />
         <div className="w-full hidden lg:inline-flex justify-between absolute bottom-30">
           <hr className="w-1/5 border-white border-opacity-30" />
@@ -29,7 +29,7 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* bounce arrow */}
-      <div className="text-center">
+      <div className="text-center h-[20%]">
         <a href="/#about">
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
