@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./pages/Home";
+import Homepage from "./pages/Home/Homepage";
 import NotFound from "./pages/Error/NotFound";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
