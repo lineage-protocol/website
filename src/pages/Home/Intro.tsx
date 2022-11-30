@@ -17,7 +17,7 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* content */}
-      <div className="w-full h-[90%] flex flex-col items-center justify-center">
+      <div className="w-full h-[80%] flex flex-col items-center justify-center">
         <img alt="Lineage" src={props.image} className="mix-blend-screen" />
         <div className="w-full hidden lg:inline-flex justify-between absolute bottom-30">
           <hr className="w-1/6 border-white border-opacity-30" />
@@ -29,7 +29,7 @@ export default function Intro(props: IntroProps) {
       </div>
 
       {/* bounce arrow */}
-      <div className="text-center h-[10%] w-full flex flex-col items-center justify-center">
+      <div className="text-center w-full relative">
         <a href="/#about">
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
