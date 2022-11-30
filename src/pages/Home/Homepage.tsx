@@ -1,7 +1,7 @@
 import React from "react";
 import Master from "../Layout/Master";
 import About from "./About";
-import Image from "../../assets/images/lineage-home.webp";
+import Image from "../../assets/images/spiral.gif";
 
 import Intro from "./Intro";
 
