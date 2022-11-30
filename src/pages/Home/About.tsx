@@ -70,10 +70,10 @@ export default function About(props: AboutProps) {
   return (
     <div
       id="about"
-      className="w-full h-screen !max-h-screen text-white flex flex-col justify-between"
+      className="w-full h-screen !max-h-screen text-white flex flex-col justify-center"
     >
       {/* About */}
-      <div className="h-[90%] flex justify-center items-center">
+      <div className="h-[80%] flex justify-center items-center">
         <img
           src={props.image}
           alt="Lineage"
@@ -102,9 +102,12 @@ export default function About(props: AboutProps) {
       </div>
 
       {/* Footer */}
-      <div className="relative h-[10%] flex flex-col justify-center items-center tracking-widest text-center sm:text-base text-sm">
+      <div className="h-[10%] flex flex-col justify-center items-center tracking-widest text-center sm:text-base text-sm">
         <div className="uppercase sm:block hidden">Email Us</div>
-        <a href="mailto:contact@lineageprotocol.com">
+        <a
+          href="mailto:contact@lineageprotocol.com"
+          className="absolute top-[195%]"
+        >
           CONTACT@lineageprotocol.com
         </a>
       </div>
