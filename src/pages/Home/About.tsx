@@ -46,7 +46,7 @@ export default function About(props: AboutProps) {
       title: "Gasless network",
       tooltip: {
         place: "top",
-        header: "Remove the constraints",
+        header: "Gasless network",
         content:
           "Lineage Network will be a gas-free network as we are not a smart contract based network. This also allows us to be chain agnostic, capable of connecting to all networks. ",
       },
