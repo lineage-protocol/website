@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 interface MasterProps {
@@ -13,6 +14,7 @@ export default function Master(props: MasterProps) {
         
         <Navbar />
         {props.children}
+        <Footer/>
       </div>
     </>
   );

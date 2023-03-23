@@ -4,12 +4,18 @@ import Info from "./Info";
 
 import Intro from "./Intro";
 import Nft from "./Nft";
+import Team from "./Team";
 
 export default function Homepage() {
   return (
-    <Master>
-      <Intro />
-      <Nft  />
-    </Master>
+    <div className="homepageBody">
+      <Master>
+        <Intro />
+        <Nft />
+        <Info />
+        <Decentralized />
+        <Team />
+      </Master>
+    </div>
   );
 }

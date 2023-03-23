@@ -1,4 +1,5 @@
 import parse from 'html-react-parser';
+import NftMob from '../../components/Swiper/Nft';
 
 export default function Nft() {
   const nft = [
@@ -20,14 +21,14 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full h-screen !max-h-screen text-white text-center m-auto ">
+    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center m-auto ">
       <div className="w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
         {/* <!-- row --> */}
-        <div className="flex flex-wrap flex-row -mx-4 justify-center px-[4%] py-10 mt-10 items-center gap-6">
+        <div className=" flex-wrap flex-row -mx-4 justify-center px-[4%] py-10 mt-10 items-center gap-6 hidden md:flex">
           {nft &&
             nft.map((item, index) => (
               <div
-                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[18%] boxAdd h-96 py-5 "
+                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[18%] boxAdd h-[25vw] py-5 "
                 key={`about-${index}`}
               >
                 <div
@@ -35,10 +36,10 @@ export default function Nft() {
                   data-wow-duration="1s"
                 >
                   <div className="pt-6 text-center">
-                    <p className={`text-3xl font-bold mb-1 font-Slider text-left px-5 ${item.name === "Networking" ? ("leading-[5rem]") : ("leading-normal")}`}>
+                    <p className={`text-[1.7vw] font-bold mb-1 font-Slider text-left px-10 ${item.name === "Networking" ? ("leading-[5rem]") : ("leading-normal")}`}>
                       {parse(item.name)}
                     </p>
-                    <p className="text-lg leading-normal font-bold mb-1 text-left px-5 break-words w-10/12">
+                    <p className="text-[1.2vw] leading-[150%] font-bold mb-1 text-left px-10 break-words w-[95%]">
                       {item.desc}
                     </p>
                   </div>
@@ -46,12 +47,14 @@ export default function Nft() {
               </div>
             ))}
         </div>
-        <a
+
+        <NftMob nft={nft} type={"info"}/>
+        {/* <a
           href="https://login.rebelpoker.io/signup"
-          className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full w-1/6 mx-auto"
+          className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full lg:w-1/6 mx-auto"
         >
          See More Information
-        </a>
+        </a> */}
       </div>
 
       <div className="text-center w-full relative "></div>

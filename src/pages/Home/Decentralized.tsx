@@ -3,19 +3,19 @@ import parse from 'html-react-parser';
 export default function Decentralized() {
   const nft = [
     {
-      name: "Fast<br/>Transactions",
+      name: "Fast Transactions",
       desc: "Lineage leverages a decentralized middleware network to ensure fast transaction processing. This allows for efficient data transfer between NFT owners, developers, and other stakeholders.",
     },
     {
-      name: "Chain<br/>Agnostics",
+      name: "Chain Agnostics",
       desc: "Lineage is designed to work with multiple blockchain networks, making it more flexible and adaptable to different blockchain ecosystems.",
     },
     {
-      name: "Secure and<br/> Transparent",
+      name: "Secure and Transparent",
       desc: "Lineage’s decentralized architecture ensures that NFT metadata is stored securely and transparently on the blockchain network. The metadata is stored as a JSON object and can be updated by the NFT owner as needed.",
     },
     {
-      name: "High<br/>Scalability",
+      name: "High Scalability",
       desc: "Lineage's decentralized infrastructure enables it to scale easily, allowing for more NFTs and metadata to be stored and managed as the ecosystem grows. The protocol uses a custom Fluence network node for storing metadata, and also provides a Data Formatter service for formatting metadata to various standards, further enhancing scalability.",
     },
     {
@@ -38,13 +38,13 @@ export default function Decentralized() {
           creating a decentralized network focused solely on NFT metadata.
         </p>
 
-        <section className="dark:bg-gray-800 dark:text-gray-100">
+        <section className="">
           <div className=" flex flex-col   mx-auto sm:py-12 lg:py-24 lg:flex-row">
-            <div className="flex items-start mt-8 lg:-mt-5">
+            <div className="flex items-start mt-8 lg:-mt-5 lg:w-1/2">
               <img
                 src={Chain.decentralized["World"]}
                 alt=""
-                className="object-cover gradient-mask-b-60 hidden lg:block"
+                className="object-cover gradient-mask-b-60 hidden lg:block w-full"
               />
                <img
                 src={Chain.decentralized["WorldMob"]}
@@ -65,7 +65,7 @@ export default function Decentralized() {
                     >
                       <div className="pt-6 text-center">
                         <p
-                          className={`text-3xl font-bold mb-1 font-Slider text-left px-5 ${
+                          className={`text-3xl font-bold mb-1 font-Slider text-left px-5 break-words w-[70%] ${
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
@@ -83,18 +83,7 @@ export default function Decentralized() {
             </div>
           </div>
         </section>
-        {/* <div className="relative">
-          <img
-            alt="test"
-            src={Chain.lines["LineL"]}
-            className="max-w-full h-56 mx-auto absolute left-40 -top-36"
-          />
-          <img
-            alt="test"
-            src={Chain.lines["LineR"]}
-            className="max-w-full h-56 mx-auto absolute right-40 -top-36"
-          />
-        </div> */}
+        
       </div>
 
       <div className="text-center w-full relative "></div>

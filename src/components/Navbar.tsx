@@ -11,7 +11,7 @@ const navigation = [
     href: "#",
     current: false,
   },
-  { name: "How it works", href: "#", current: false },
+  { name: "How it works", href: "/work", current: false },
   {
     name: "Team",
     href: "#",
@@ -28,7 +28,7 @@ function loginCheck(className: any) {
     <div className={`${className}`}>
       <div className="flex flex-row gap-2">
         <a
-          href="https://login.rebelpoker.io/signup"
+          href="#"
           className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
         >
           Join Discord
@@ -40,7 +40,7 @@ function loginCheck(className: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black shadow w-screen z-20 fixed">
+    <Disclosure as="nav" className="bg-black shadow w-screen z-20 lg:fixed">
       {({ open }) => (
         <>
           <div className="bg-black w-full p-3 text-center font-Lexend">
@@ -48,12 +48,14 @@ export default function Navbar() {
               ComposeDB: A new composable graph database powered by Ceramic. Get
               Started
             </p>
-            <Marquee gradient={false} >
-            ComposeDB: A new composable graph database powered by Ceramic. Get
-              Started
-            </Marquee>
+            <p className="md:hidden">
+              <Marquee gradient={false}>
+                ComposeDB: A new composable graph database powered by Ceramic.
+                Get Started
+              </Marquee>
+            </p>
           </div>
-          <div className="max-w-full mx-auto px-4 lg:px-12">
+          <div className="max-w-full mx-auto px-3 lg:px-12">
             <div className="relative flex items-center justify-between p-3">
               <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">
                 {/* Mobile menu button */}
@@ -72,7 +74,7 @@ export default function Navbar() {
                     <img
                       src={Chain.icon["Logo"]}
                       alt="logo"
-                      className="w-1/2 md:w-full"
+                      className="w-[60%] md:w-full"
                     />
                   </a>
                 </div>

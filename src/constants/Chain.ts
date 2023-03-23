@@ -10,8 +10,31 @@ import LineR from "../assets/images/svg/nft/lineR.svg"
 
 import World from "../assets/images/svg/decentralized/world.webp"
 import WorldMob from "../assets/images/svg/decentralized/worldMob.webp"
+
+// TEAMS
+import Marcus from "../assets/images/homepage/team/Marcus.webp"
+import Joel from "../assets/images/homepage/team/Joel.webp"
+import Wilson from "../assets/images/homepage/team/Wilson.webp"
+import Iqbal from "../assets/images/homepage/team/Iqbal.webp"
+import Marek from "../assets/images/homepage/team/Marek.webp"
+import Joshua from "../assets/images/homepage/team/Joshua.webp"
+// END TEAMS
+
+// INFO
+import InfoBg from "../assets/images/svg/info/bg.svg"
+// END INFO
+
+// Social
+import Discord from "../assets/images/svg/social/discord.svg"
+import Twitter from "../assets/images/svg/social/twitter.svg"
+import Github from "../assets/images/svg/social/github.svg"
+// end social
+
+
+import Footer from "../assets/images/footer.svg"
 export const icon: any = {
-    Logo: Logo
+    Logo: Logo,
+    Footer:Footer
 }
 export const lines: any = {
     LineL: LineL,
@@ -28,5 +51,23 @@ export const nft: any = {
 export const decentralized: any = {
     World: World,
     WorldMob:WorldMob
+}
+export const info: any = {
+    InfoBg: InfoBg
+}
+
+export const team: any = {
+    Wilson:Wilson,
+    Marcus: Marcus,
+    Joel:Joel,
+    Iqbal: Iqbal,
+    Joshua: Joshua,
+    Marek:Marek
+}
+
+export const social: any = {
+    Discord: Discord,
+    Twitter: Twitter,
+    Github: Github
 }
 

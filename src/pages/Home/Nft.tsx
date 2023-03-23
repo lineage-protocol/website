@@ -1,3 +1,4 @@
+import NftMob from "../../components/Swiper/Nft";
 import * as Chain from "../../constants/Chain";
 export default function Nft() {
   const nft = [
@@ -23,8 +24,8 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full h-screen !max-h-screen text-white text-center">
-      <div className="w-full h-full flex flex-col justify-start gap-7 ">
+    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center">
+      <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-44 ">
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
           Unleashing the true potential of NFTs
         </p>
@@ -33,8 +34,8 @@ export default function Nft() {
           and collaborative ownership
         </p>
         <a
-          href="https://login.rebelpoker.io/signup"
-          className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full w-1/6 mx-auto hidden md:block"
+          href="#"
+          className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full lg:w-1/6 mx-auto "
         >
           How it Works
         </a>
@@ -51,7 +52,7 @@ export default function Nft() {
           />
         </div>
         {/* <!-- row --> */}
-        <div className="flex flex-wrap flex-row -mx-4 justify-center px-[4%] py-10 mt-10">
+        <div className="flex-wrap flex-row -mx-4 justify-center px-[7%] py-10 mt-10 hidden md:flex">
           {nft &&
             nft.map((item, index) => (
               <div
@@ -78,6 +79,8 @@ export default function Nft() {
               </div>
             ))}
         </div>
+
+        <NftMob nft={nft} type={"nft"}/>
       </div>
 
       <div className="text-center w-full relative "></div>
