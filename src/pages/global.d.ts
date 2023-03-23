@@ -1,0 +1,13 @@
+declare module 'jszip'
+declare module "*.docx"
+declare module "*.png"
+declare module "*.jpg"
+declare module "*.jpeg"
+declare module "*.svg"
+declare module "*.gif"
+declare module "*.webp"
+declare module "*.mp4"
+declare module "*.exe"
+declare module "*.dmg"
+declare module "*.apk"
+declare module "*.ipa"

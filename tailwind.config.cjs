@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nasalization: ["Nasalization"],
-        montserrat: [""],
+        Slider: ["Slider"],
+        Lexend:["Lexend"]
+      
       },
       colors: {
         primary: "var(--primary)",
@@ -20,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-gradient-mask-image")],
 };

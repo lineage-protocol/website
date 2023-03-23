@@ -1,12 +1,6 @@
-import React from "react";
-import ReactDOMServer from "react-dom/server";
-import AboutToolTipItem from "../../components/AboutToolTipItem";
 
-interface AboutProps {
-  image: any;
-}
 
-export default function About(props: AboutProps) {
+export default function About() {
   const tooltips = [
     {
       classNames: `
@@ -74,31 +68,7 @@ export default function About(props: AboutProps) {
     >
       {/* About */}
       <div className="h-[80%] flex justify-center items-center">
-        <img
-          src={props.image}
-          alt="Lineage"
-          className="mix-blend-screen -rotate-45"
-        />
-
-        <div className="absolute w-full max-w-wrapper h-[94%] sm:h-[90%] flex flex-col justify-center items-center">
-          {tooltips &&
-            tooltips.map((item, index) => (
-              <div
-                key={`about-tooltip-${index}`}
-                className={`uppercase relative border border-gray-700 rounded-lg p-1 sm:p-6 w-[130px] sm:w-[250px] text-[12px] sm:text-[16px] text-center ${item.classNames}`}
-                data-html={true}
-                data-place={item.tooltip.place}
-                data-tip={ReactDOMServer.renderToString(
-                  <AboutToolTipItem
-                    header={item.tooltip.header}
-                    content={item.tooltip.content}
-                  />
-                )}
-              >
-                {item.title}
-              </div>
-            ))}
-        </div>
+        
       </div>
 
       {/* Footer */}
