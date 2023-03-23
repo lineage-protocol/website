@@ -30,6 +30,10 @@ import Twitter from "../assets/images/svg/social/twitter.svg"
 import Github from "../assets/images/svg/social/github.svg"
 // end social
 
+import Desktop from "../assets/images/works/games/desktop.webp"
+import Mobile from "../assets/images/works/games/mobile.webp"
+import Sport from "../assets/images/works/games/sport.webp"
+
 
 import Footer from "../assets/images/footer.svg"
 export const icon: any = {
@@ -69,5 +73,11 @@ export const social: any = {
     Discord: Discord,
     Twitter: Twitter,
     Github: Github
+}
+
+export const games: any = {
+    Desktop: Desktop,
+    Mobile: Mobile,
+    Sport:Sport
 }
 
