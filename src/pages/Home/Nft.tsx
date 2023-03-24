@@ -71,7 +71,7 @@ export default function Nft() {
                     />
                   </div>
                   <div className="pt-6 text-center">
-                    <p className="text-lg leading-normal font-bold mb-1 uppercase">
+                    <p className="text-lg leading-[120%] tracking-[0.02em] font-bold mb-1 uppercase font-Slider">
                       {item.name}
                     </p>
                   </div>

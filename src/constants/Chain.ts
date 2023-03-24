@@ -34,6 +34,8 @@ import Desktop from "../assets/images/works/games/desktop.webp"
 import Mobile from "../assets/images/works/games/mobile.webp"
 import Sport from "../assets/images/works/games/sport.webp"
 
+import Estate from "../assets/images/works/estate/state.webp"
+import Loyalty2 from "../assets/images/works/estate/loyalty.webp"
 
 import Footer from "../assets/images/footer.svg"
 export const icon: any = {
@@ -79,5 +81,10 @@ export const games: any = {
     Desktop: Desktop,
     Mobile: Mobile,
     Sport:Sport
+}
+
+export const estate: any = {
+    Estate: Estate,
+    Loyalty2:Loyalty2
 }
 

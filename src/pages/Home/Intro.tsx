@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <div className="w-full h-screen !max-h-screen text-white flex flex-col justify-between relative">
       <div
-        className="w-full lg:h-full flex flex-col  justify-center mx-6 lg:mx-36 gap-5 absolute lg:!relative top-0 h-[130vw] "
+        className="w-full lg:h-full flex flex-col  justify-center mx-6 lg:mx-36 gap-5 absolute lg:!relative top-0 h-[170vw] "
       >
         <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
           Building the future of NFTs today

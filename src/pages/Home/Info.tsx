@@ -1,5 +1,7 @@
 import parse from 'html-react-parser';
 import NftMob from '../../components/Swiper/Nft';
+import infoBg from "../../assets/images/background/infoBg.webp";
+
 
 export default function Nft() {
   const nft = [
@@ -21,7 +23,10 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center m-auto ">
+    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center m-auto relative ">
+      <div className='absolute -top-[25vw] w-full h-full'>
+        <img src={infoBg} alt="infoBg" className=''/>
+      </div>
       <div className="w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
         {/* <!-- row --> */}
         <div className=" flex-wrap flex-row -mx-4 justify-center px-[4%] py-10 mt-10 items-center gap-6 hidden md:flex">

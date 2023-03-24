@@ -40,7 +40,7 @@ function loginCheck(className: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black shadow w-screen z-20 lg:fixed">
+    <Disclosure as="nav" className="bg-black shadow w-screen z-20 fixed">
       {({ open }) => (
         <>
           <div className="bg-black w-full p-3 text-center font-Lexend">
