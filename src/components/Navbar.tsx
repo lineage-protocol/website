@@ -7,7 +7,7 @@ import { Disclosure } from "@headlessui/react";
 const navigation = [
   { name: "About", href: "/#", current: true },
   {
-    name: "Blog",
+    name: "Blog-test",
     href: "#",
     current: false,
   },
