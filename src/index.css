@@ -129,7 +129,7 @@ a:hover {
   width: 100%;
 }
 
-.swiper-slide:first-child {
+.swiper-slide.mobile:first-child {
   margin-left: 4rem;
 }
 .swiper-slide {

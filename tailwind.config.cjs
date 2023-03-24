@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        'music-rgba': 'rgba(29, 33, 35, 0.3)',
       },
       screens: {
         sm: { min: "640px" }, // large mobiles

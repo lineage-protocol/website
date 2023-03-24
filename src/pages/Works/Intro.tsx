@@ -1,10 +1,6 @@
 
 import Image from "../../assets/images/spiral.gif";
 
-// interface IntroProps {
-//   image: any;
-// }
-
 export default function Intro() {
   return (
     <div className="w-full h-screen !max-h-screen text-white flex flex-col justify-between relative">

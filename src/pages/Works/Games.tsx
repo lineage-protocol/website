@@ -21,37 +21,7 @@ export default function Games() {
             alt="logo"
             className="w-full px-5"
           />
-        </div>
-
-        {/* <div className="flex-shrink max-w-full w-full lg:w-5/12 lg:w-[40%] boxAdd lg:py-5 mx-auto relative  lg:h-auto">
-          <div className="flex flex-wrap flex-row lg:-mx-4  lg:pl-[4%]  lg:text-left  w-full">
-            <div className="flex-shrink max-w-full w-full sm:w-1/2  ">
-              <div
-                className="relative overflow-hidden hover-grayscale-0 wow fadeInUp"
-                data-wow-duration="1s"
-              >
-                <img
-                  src={Chain.games["Inventory"]}
-                  alt="logo"
-                  className="w-full px-5"
-                />
-              </div>
-            </div>
-            <div className="flex-shrink max-w-full w-full sm:w-1/2 py-7 ">
-              <div
-                className="relative overflow-hidden hover-grayscale-0 wow fadeInUp"
-                data-wow-duration="1s"
-              >
-                <img
-                  src={Chain.games["Sword"]}
-                  alt="logo"
-                  className="w-full px-5"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
+        </div>        
         <p className="lg:text-[1.1vw] leading-[150%] lg:w-[60%] px-10 mx-auto">
           Using Lineage Protocol, game developers can create a more engaging and
           rewarding gaming experience for players. For example, if a player

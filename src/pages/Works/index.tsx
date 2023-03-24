@@ -10,12 +10,12 @@ export default function Works() {
   return (
     <div className="workBody">
       <Master>
-        {/* <Intro/>
+        <Intro/>
         <Games/>
         <Sports/>
         <Loyalty/>
-        <Estate/> */}
-        <Intro/>
+        <Estate/>
+
         <Music/>
       </Master>
     </div>

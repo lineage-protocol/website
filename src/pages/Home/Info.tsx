@@ -6,20 +6,20 @@ import infoBg from "../../assets/images/background/infoBg.webp";
 export default function Nft() {
   const nft = [
     {
-      name: "API Hosting",
-      desc: "In posuere at tortor quis vulputate. Vivamus arcu lectus, vehicula sed placerat ut, porttitor in leo."
+      name: "Data Key",
+      desc: "A data key is a cryptographic unique identifier assigned to each NFT that enables linking with its associated metadata."
     },
     {
-      name: "Event<br/> Storage",
-      desc: "In posuere at tortor quis vulputate. Vivamus arcu lectus, vehicula sed placerat ut, porttitor in leo."
+      name: "DHT",
+      desc: "A lookup service that matches data keys and public keys to metadata CIDs, allowing for the management of decentralized metadata."
     },
     {
-      name: "Event<br/> Ordering",
-      desc: "In posuere at tortor quis vulputate. Vivamus arcu lectus, vehicula sed placerat ut, porttitor in leo."
+      name: "IPFS DAG",
+      desc: "A service that converts metadata to a DAG format, making it easier to store and retrieve metadata using IPFS."
     },
     {
-      name: "Networking",
-      desc: "In posuere at tortor quis vulputate. Vivamus arcu lectus, vehicula sed placerat ut, porttitor in leo."
+      name: "Cryptographic<br/>Keypair",
+      desc: "For secure metadata signing and verification."
     },
   ];
   return (

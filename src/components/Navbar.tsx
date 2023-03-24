@@ -55,7 +55,7 @@ export default function Navbar() {
               </Marquee>
             </p>
           </div>
-          <div className="max-w-full mx-auto px-3 lg:px-12">
+          <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
             <div className="relative flex items-center justify-between p-3">
               <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">
                 {/* Mobile menu button */}
@@ -74,7 +74,14 @@ export default function Navbar() {
                     <img
                       src={Chain.icon["Logo"]}
                       alt="logo"
-                      className="w-[60%] md:w-full"
+                      className="w-[60%] md:w-full hidden md:block"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src={Chain.icon["LogoMobile"]}
+                      alt="logo"
+                      className="w-[80%] md:w-full md:hidden"
                     />
                   </a>
                 </div>
