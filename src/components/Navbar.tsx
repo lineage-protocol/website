@@ -31,7 +31,7 @@ function loginCheck(className: any) {
           href="#"
           className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
         >
-          Join Discord
+          Contact Us
         </a>
       </div>
     </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="bg-black w-full p-3 text-center font-Lexend">
-            <p className="hidden lg:block">
+            {/* <p className="hidden lg:block">
               ComposeDB: A new composable graph database powered by Ceramic. Get
               Started
             </p>
@@ -53,7 +53,7 @@ export default function Navbar() {
                 ComposeDB: A new composable graph database powered by Ceramic.
                 Get Started
               </Marquee>
-            </p>
+            </p> */}
           </div>
           <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
             <div className="relative flex items-center justify-between p-3">

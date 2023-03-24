@@ -4,37 +4,37 @@ export default function Team() {
     {
       icon: "Wilson",
       name: "Wilson",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
     {
       icon: "Joel",
       name: "Joel",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
     {
       icon: "Iqbal",
       name: "Iqbal",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
     {
       icon: "Marcus",
       name: "Marcus",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
     {
       icon: "Marek",
       name: "Marek",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
     {
       icon: "Joshua",
       name: "Joshua",
-      subs: "Tittle Person"
+      subs: "Tittle Person",
     },
   ];
   return (
     <div className="w-full  text-white text-center relative" id="team">
-     
+      <div id="overlay"></div>
       <div className="w-full h-full flex flex-col justify-start gap-7 ">
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
           Lineage Protocol Team
@@ -44,7 +44,7 @@ export default function Team() {
           nulla interdum, luctus mauris semper, maximus orci. Nulla vel magna
           ligula.
         </p>
-        
+
         {/* <!-- row --> */}
         <div className="flex-wrap flex-row -mx-4 justify-center px-[8%] py-10 mt-10 flex">
           {teams &&
@@ -76,8 +76,6 @@ export default function Team() {
               </div>
             ))}
         </div>
-
-       
       </div>
 
       <div className="text-center w-full relative "></div>
