@@ -34,10 +34,10 @@ export default function Nft() {
           and collaborative ownership
         </p>
         <a
-          href="#"
+          href="/work"
           className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full lg:w-1/6 mx-auto "
         >
-          How it Works
+          How It Works
         </a>
         <div className="relative hidden md:block">
           <img

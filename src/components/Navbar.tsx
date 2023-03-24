@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure } from "@headlessui/react";
 
 const navigation = [
-  { name: "About", href: "/#", current: true },
-  {
-    name: "Blog-test",
-    href: "#",
-    current: false,
-  },
-  { name: "How it works", href: "/work", current: false },
+  // { name: "About", href: "/#", current: true },
+  // {
+  //   name: "Blog",
+  //   href: "#",
+  //   current: false,
+  // },
+  { name: "How It Works", href: "/work", current: false },
   {
     name: "Team",
     href: "#team",
@@ -28,7 +28,7 @@ function loginCheck(className: any) {
     <div className={`${className}`}>
       <div className="flex flex-row gap-2">
         <a
-          href="#"
+          href="mailto: contact@lineageprotocol.com"
           className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
         >
           Contact Us

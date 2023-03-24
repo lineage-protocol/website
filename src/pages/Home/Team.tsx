@@ -4,32 +4,32 @@ export default function Team() {
     {
       icon: "Wilson",
       name: "Wilson",
-      subs: "Tittle Person",
+      subs: "CEO",
     },
     {
       icon: "Joel",
       name: "Joel",
-      subs: "Tittle Person",
+      subs: "CFO",
     },
     {
       icon: "Iqbal",
       name: "Iqbal",
-      subs: "Tittle Person",
+      subs: "CTO",
     },
     {
       icon: "Marcus",
       name: "Marcus",
-      subs: "Tittle Person",
+      subs: "COO",
     },
     {
       icon: "Marek",
       name: "Marek",
-      subs: "Tittle Person",
+      subs: "CMO",
     },
     {
       icon: "Joshua",
       name: "Joshua",
-      subs: "Tittle Person",
+      subs: "Project Lead",
     },
   ];
   return (
@@ -39,11 +39,11 @@ export default function Team() {
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
           Lineage Protocol Team
         </p>
-        <p className="md:text-[1.4vw] leading-[150%] md:w-[60%] px-10 mx-auto">
+        {/* <p className="md:text-[1.4vw] leading-[150%] md:w-[60%] px-10 mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget
           nulla interdum, luctus mauris semper, maximus orci. Nulla vel magna
           ligula.
-        </p>
+        </p> */}
 
         {/* <!-- row --> */}
         <div className="flex-wrap flex-row -mx-4 justify-center px-[8%] py-10 mt-10 flex">

@@ -16,11 +16,9 @@ export default function Intro() {
         <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
           How it Works
         </p>
-        <p className="text-sm lg:text-[1.4vw] leading-[150%] pr-10 md:w-[60%] lg:w-[50%]">
-          Lineage is a decentralized middleware that allows developers to deploy
-          dynamic NFTs with a few lines of code. Using Lineage, NFT metadata can
-          now be tracked, evolve, and become interoperable across projects
-        </p>
+        {/* <p className="text-sm lg:text-[1.4vw] leading-[150%] pr-10 md:w-[60%] lg:w-[50%]">
+        Lineage is a decentralized metadata network that allows developers to deploy Dynamic NFTs with just a few lines of code. Using Lineage, NFT metadata can now be tracked, evolve, and become interoperable across ecosystems.
+        </p> */}
       </div>
     </div>
   );

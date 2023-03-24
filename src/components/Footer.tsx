@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="">
             <div className="">
               <a
-                href="#"
+                href="mailto: contact@lineageprotocol.com"
                 className="uppercase !font-bold py-[0.8rem]  font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
                 md:absolute md:right-10"
               >
@@ -100,11 +100,11 @@ export default function Footer() {
               </a>
               <a
                 className="hover:opacity-75"
-                href="#"
+                href="https://twitter.com/LineageProtocol"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Chain.social["Github"]} alt="logo" className="" />
+                {/* <img src={Chain.social["Github"]} alt="logo" className="" /> */}
               </a>
               <a
                 className="hover:opacity-75"
@@ -112,7 +112,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Chain.social["Discord"]} alt="logo" className="" />
+                {/* <img src={Chain.social["Discord"]} alt="logo" className="" /> */}
               </a>
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function Decentralized() {
       desc: "Lineage leverages a decentralized middleware network to ensure fast transaction processing. This allows for efficient data transfer between NFT owners, developers, and other stakeholders.",
     },
     {
-      name: "Chain Agnostics",
+      name: "Chain Agnostic",
       desc: "Lineage is designed to work with multiple blockchain networks, making it more flexible and adaptable to different blockchain ecosystems.",
     },
     {
