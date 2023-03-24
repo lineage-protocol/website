@@ -3,7 +3,7 @@ export default function Estate() {
   return (
     <div className="w-full lgh-screen max-h-screen text-white text-center relative">
       <div className="w-full h-full flex flex-col justify-start gap-20 ">
-        <p className="text-3xl md:text-[4.5vw] leading-[150%] font-Slider">
+        <p className="text-5xl md:text-[4.5vw] leading-[150%] font-Slider break-words w-1/2 text-left px-4 pb-3 md:text-center md:w-full">
           Real Estate
         </p>
 

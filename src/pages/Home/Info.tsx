@@ -29,11 +29,11 @@ export default function Nft() {
       </div>
       <div className="w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
         {/* <!-- row --> */}
-        <div className=" flex-wrap flex-row -mx-4 justify-center px-[4%] py-10 mt-10 items-center gap-6 hidden md:flex">
+        <div className=" flex-wrap flex-row -mx-4  px-[4%] py-10 mt-10 justify-center items-center gap-6 hidden md:flex">
           {nft &&
             nft.map((item, index) => (
               <div
-                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[18%] boxAdd h-[25vw] py-5 "
+                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[21%] boxAdd h-[25vw] py-5 "
                 key={`about-${index}`}
               >
                 <div
