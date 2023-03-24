@@ -33,7 +33,7 @@ export default function Team() {
     },
   ];
   return (
-    <div className="w-full  text-white text-center relative">
+    <div className="w-full  text-white text-center relative" id="team">
      
       <div className="w-full h-full flex flex-col justify-start gap-7 ">
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
