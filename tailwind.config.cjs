@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nasalization: ["Nasalization"],
-        montserrat: [""],
+        Slider: ["Slider"],
+        Lexend:["Lexend"]
+      
       },
       colors: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        'music-rgba': 'rgba(29, 33, 35, 0.3)',
       },
       screens: {
         sm: { min: "640px" }, // large mobiles
@@ -20,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-gradient-mask-image")],
 };

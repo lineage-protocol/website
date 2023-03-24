@@ -1,15 +1,21 @@
-import React from "react";
 import Master from "../Layout/Master";
-import About from "./About";
-import Image from "../../assets/images/spiral.gif";
+import Decentralized from "./Decentralized";
+import Info from "./Info";
 
 import Intro from "./Intro";
+import Nft from "./Nft";
+import Team from "./Team";
 
 export default function Homepage() {
   return (
-    <Master>
-      <Intro image={Image} />
-      <About image={Image} />
-    </Master>
+    <div className="homepageBody">
+      <Master>
+        <Intro />
+        <Nft />
+        <Info />
+        <Decentralized />
+        <Team />
+      </Master>
+    </div>
   );
 }

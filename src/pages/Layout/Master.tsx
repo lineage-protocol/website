@@ -1,7 +1,6 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import ReactTooltip from "react-tooltip";
-import BackgroundContainer from "../../components/BackgroundContainer";
 
 interface MasterProps {
   children: any;
@@ -11,16 +10,11 @@ interface MasterProps {
 export default function Master(props: MasterProps) {
   return (
     <>
-      <ReactTooltip
-        place="bottom"
-        effect="solid"
-        backgroundColor="white"
-        textColor="var(--primary)"
-      />
-      <BackgroundContainer />
-      <div className="w-full min-h-screen flex flex-col justify-start items-center overflow-x-hidden">
-        {(props.navbar ?? false) && <Navbar />}
+      <div className="w-full min-h-screen flex flex-col justify-start items-center overflow-hidden">
+        
+        <Navbar />
         {props.children}
+        <Footer/>
       </div>
     </>
   );
