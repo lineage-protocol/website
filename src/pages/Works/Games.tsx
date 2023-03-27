@@ -1,7 +1,7 @@
 import * as Chain from "../../constants/Chain";
 export default function Games() {
   return (
-    <div className="w-full lg:h-screen lg:max-h-screen text-white text-center relative">
+    <div className="w-full  text-white text-center relative">
       <div className="w-full h-full flex flex-col justify-start gap-10 ">
         <p className="text-3xl lg:text-[4.5vw] leading-[150%] font-Slider">Games</p>
 

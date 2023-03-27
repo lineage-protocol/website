@@ -1,6 +1,10 @@
 import NftMob from "../../components/Swiper/Nft";
 import * as Chain from "../../constants/Chain";
-export default function Nft() {
+
+interface NftProps {
+  portrait: any;
+}
+export default function Nft(props: NftProps) {
   const nft = [
     {
       icon: "Games",
@@ -26,7 +30,7 @@ export default function Nft() {
   return (
     <div className="w-full  text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-44 ">
-        <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
+        <p className={`${props.portrait ? "md:text-4xl" : "md:text-6xl"} text-3xl  leading-[150%] font-Slider`}>
           Unleashing the true potential of NFTs
         </p>
         <p className="md:text-[1.4vw] leading-[150%] md:w-[60%] px-10 mx-auto">

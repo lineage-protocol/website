@@ -1,7 +1,7 @@
 import * as Chain from "../../constants/Chain";
 export default function Loyalty() {
   return (
-    <div className="w-full lg:h-screen lg:max-h-screen text-white text-center relative">
+    <div className="w-full lg:max-h-screen text-white text-center relative">
       <div className=" pt-12 pr-0 pb-14 pl-0 ">
         <div
           className="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16

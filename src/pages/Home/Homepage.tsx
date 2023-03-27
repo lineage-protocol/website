@@ -1,3 +1,4 @@
+import  { useState, useEffect } from "react";
 import Master from "../Layout/Master";
 import Decentralized from "./Decentralized";
 import Info from "./Info";
@@ -7,13 +8,21 @@ import Nft from "./Nft";
 import Team from "./Team";
 
 export default function Homepage() {
+
+  const [portrait, setPortrait] = useState(false);
+
+  // console.log("portrait", portrait);
+  useEffect(() => {
+    setPortrait(window.matchMedia("(orientation: portrait)").matches);
+    window.matchMedia("(orientation: portrait)").matches;
+  }, [portrait]);
   return (
     <div className="homepageBody">
       <Master>
-        <Intro />
-        <Nft />
+        <Intro portrait={portrait} />
+        <Nft portrait={portrait}/>
         <Info />
-        <Decentralized />
+        <Decentralized portrait={portrait}/>
         <Team />
       </Master>
     </div>

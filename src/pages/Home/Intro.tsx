@@ -1,29 +1,18 @@
-import  { useState, useEffect } from "react";
 import BGRight from "../../assets/images/svg/spiral.svg";
 
-// interface IntroProps {
-//   image: any;
-// }
+interface IntroProps {
+  portrait: any;
+}
 
-export default function Intro() {
-  const [portrait, setPortrait] = useState(false);
-
-  // console.log("portrait", portrait);
-  useEffect(() => {
-    setPortrait(window.matchMedia("(orientation: portrait)").matches);
-    window.matchMedia("(orientation: portrait)").matches;
-  }, [portrait]);
-
-  // console.log(portrait);
-
+export default function Intro(props: IntroProps) {
   return (
     <section className="">
       <div
         className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] md:py-32 lg:flex ${
-          portrait ? "" : "lg:h-screen"
+          props.portrait ? "" : "lg:h-screen"
         } lg:items-center`}
       >
-        <div className={`${portrait ? "mt-28" : ""}`}>
+        <div className={`${props.portrait ? "mt-28" : ""}`}>
           <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
             Building the future of NFTs today
           </p>

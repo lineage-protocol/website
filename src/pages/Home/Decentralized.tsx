@@ -1,6 +1,9 @@
 import * as Chain from "../../constants/Chain";
 import parse from 'html-react-parser';
-export default function Decentralized() {
+interface DecentralizedProps {
+  portrait: any;
+}
+export default function Decentralized(props: DecentralizedProps) {
   const nft = [
     {
       name: "Fast Transactions",
@@ -65,11 +68,11 @@ export default function Decentralized() {
                     >
                       <div className="pt-6 text-center">
                         <p
-                          className={`text-3xl font-bold mb-1 font-Slider text-left px-5 break-words w-[70%] ${
+                          className={` font-bold mb-1 font-Slider text-left px-5 break-words w-[70%] ${
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          }`}
+                          } ${props.portrait ? "text-xl" : "text-3xl"}`}
                         >
                           {parse(item.name)}
                         </p>
