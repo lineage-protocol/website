@@ -24,7 +24,7 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center">
+    <div className="w-full  text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-44 ">
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
           Unleashing the true potential of NFTs

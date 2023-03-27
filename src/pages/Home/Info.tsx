@@ -23,7 +23,7 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full lg:h-screen lg:!max-h-screen text-white text-center m-auto relative ">
+    <div className="w-full  text-white text-center m-auto relative ">
       <div className='absolute -top-[25vw] w-full h-full'>
         <img src={infoBg} alt="infoBg" className=''/>
       </div>

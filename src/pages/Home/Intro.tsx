@@ -1,3 +1,4 @@
+import  { useState, useEffect } from "react";
 import BGRight from "../../assets/images/svg/spiral.svg";
 
 // interface IntroProps {
@@ -5,25 +6,45 @@ import BGRight from "../../assets/images/svg/spiral.svg";
 // }
 
 export default function Intro() {
+  const [portrait, setPortrait] = useState(false);
+
+  // console.log("portrait", portrait);
+  useEffect(() => {
+    setPortrait(window.matchMedia("(orientation: portrait)").matches);
+    window.matchMedia("(orientation: portrait)").matches;
+  }, [portrait]);
+
+  // console.log(portrait);
+
   return (
-    <div className="w-full h-screen !max-h-screen text-white flex flex-col justify-between relative">
+    <section className="">
       <div
-        className="w-full lg:h-full flex flex-col  justify-center mx-6 lg:mx-36 gap-5 absolute lg:!relative top-0 h-[170vw] "
+        className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] md:py-32 lg:flex ${
+          portrait ? "" : "lg:h-screen"
+        } lg:items-center`}
       >
-        <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
-          Building the future of NFTs today
-        </p>
-        <p className="text-sm lg:text-[1.4vw] leading-[150%] pr-10 lg:w-[50%]">
-        Lineage is a decentralized metadata network that allows developers to deploy Dynamic NFTs with just a few lines of code. Using Lineage, NFT metadata can now be tracked, evolve, and become interoperable across ecosystems.
-        </p>
+        <div className={`${portrait ? "mt-28" : ""}`}>
+          <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
+            Building the future of NFTs today
+          </p>
+
+          <p className="text-sm lg:text-[1.4vw] leading-[150%] pr-10 lg:w-[50%]">
+            Lineage is a decentralized metadata network that allows developers
+            to deploy Dynamic NFTs with just a few lines of code. Using Lineage,
+            NFT metadata can now be tracked, evolve, and become interoperable
+            across ecosystems.
+          </p>
+          
+        </div>
+
+        <div className="">
+            <img
+              alt="Lineage"
+              src={BGRight}
+              className="mix-blend-soft-light lg:w-[45%] absolute right-0 -bottom-[17vw] overflow-x-visible opacity-[60%] "
+            />
+          </div>
       </div>
-      <div className="text-center w-full lg:relative ">
-        <img
-          alt="Lineage"
-          src={BGRight}
-          className="mix-blend-soft-light lg:w-[45%] absolute right-0 -bottom-[17vw] overflow-x-visible opacity-[60%] "
-        />
-      </div>
-    </div>
+    </section>
   );
 }
