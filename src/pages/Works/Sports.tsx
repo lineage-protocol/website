@@ -17,7 +17,7 @@ export default function Sports() {
           <img
             src={Chain.games["Sport"]}
             alt="logo"
-            className="w-full scale-[1.5]"
+            className="w-full scale-[1.3]"
           />
         </div>
 
