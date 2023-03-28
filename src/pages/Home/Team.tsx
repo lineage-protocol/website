@@ -1,5 +1,9 @@
 import * as Chain from "../../constants/Chain";
-export default function Team() {
+interface TeamProps {
+  portrait: any;
+}
+
+export default function Team(props: TeamProps) {
   const teams = [
     {
       icon: "Wilson",
@@ -33,10 +37,10 @@ export default function Team() {
     },
   ];
   return (
-    <div className="w-full h-screen text-white text-center relative" id="team">
+    <div className={`w-full h-auto text-white text-center relative`} id="team">
       <div id="overlay"></div>
       <div className="w-full h-full flex flex-col justify-start gap-7 ">
-        <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
+        <p className="text-3xl lg:text-[3vw] md:text-6xl leading-[150%] font-Slider">
           Lineage Protocol Team
         </p>
         {/* <p className="md:text-[1.4vw] leading-[150%] md:w-[60%] px-10 mx-auto">
@@ -46,7 +50,7 @@ export default function Team() {
         </p> */}
 
         {/* <!-- row --> */}
-        <div className="flex-wrap flex-row -mx-4 justify-center px-[8%] py-10 mt-10 flex">
+        <div className={`flex-wrap flex-row -mx-4 justify-center ${props.portrait? "px-[3%]" : "px-[8%]"} py-10 mt-10 flex`}>
           {teams &&
             teams.map((item, index) => (
               <div
@@ -54,7 +58,7 @@ export default function Team() {
                 key={`about-${index}`}
               >
                 <div
-                  className="relative hover-grayscale-0 wow fadeInUp"
+                  className="relative hover-grayscale-0 wow fadeInUp mx-2"
                   data-wow-duration="1s"
                 >
                   <div className="relative overflow-hidden px-6">
@@ -65,22 +69,22 @@ export default function Team() {
                     />
                   </div>
                   <div className="pt-6 text-center">
-                    <p className="text-2xl leading-[120%] font-bold mb-2 font-Slider tracking-[0.02em]">
+                    <p className="text-2xl lg:text-[1.3vw] leading-[120%] font-bold mb-2 font-Slider tracking-[0.02em]">
                       {item.name}
                     </p>
-                    <p className="text-lg font-bold mb-4 tracking-[0.04em] leading-[150%]">
+                    <p className="text-lg lg:text-[1vw] font-bold mb-4 tracking-[0.04em] leading-[150%]">
                       {item.subs}
                     </p>
                     <p className="text-lg font-bold mb-2 tracking-[0.04em] leading-[150%]">
                       <a
                         href="mailto: contact@lineageprotocol.com"
-                        className="inline-flex items-center !font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
+                        className="inline-flex items-center lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full"
                       >
                         Linkedin
                         <img
                           alt="test"
                           src={Chain.team["Linkedin"]}
-                          className="max-w-full w-full h-auto mx-auto object-cover"
+                          className="max-w-full w-full h-auto mx-auto object-cover pl-2"
                         />
                       </a>
                     </p>

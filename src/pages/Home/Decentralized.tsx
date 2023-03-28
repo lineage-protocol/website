@@ -75,7 +75,7 @@ export default function Decentralized(props: DecentralizedProps) {
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          } ${props.portrait ? "text-xl" : "text-2xl"}`}
+                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw]"}`}
                         >
                           {parse(item.name)}
                         </p>

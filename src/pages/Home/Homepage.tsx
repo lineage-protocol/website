@@ -32,7 +32,7 @@ export default function Homepage() {
         <Nft portrait={portrait}/>
         <Info portrait={portrait}/>
         <Decentralized portrait={portrait} isMac={mac}/>
-        <Team />
+        <Team portrait={portrait}/>
       </Master>
     </div>
   );
