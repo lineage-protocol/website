@@ -1,7 +1,8 @@
 import * as Chain from "../../constants/Chain";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 interface DecentralizedProps {
   portrait: any;
+  isMac: any;
 }
 export default function Decentralized(props: DecentralizedProps) {
   const nft = [
@@ -22,13 +23,13 @@ export default function Decentralized(props: DecentralizedProps) {
       desc: "Lineage's decentralized infrastructure enables it to scale easily, allowing for more NFTs and metadata to be stored and managed as the ecosystem grows. The protocol uses a custom Fluence network node for storing metadata, and also provides a Data Formatter service for formatting metadata to various standards, further enhancing scalability.",
     },
     {
-        name: "Interoperable",
-        desc: "Lineage allows for interoperability between different blockchain networks and applications, enabling data sharing and collaboration across different ecosystems.",
-      },
-      {
-        name: "Low Cost",
-        desc: "Lineage offers a cost-effective solution for NFT metadata management, with low fees and other associated costs. This is achieved through the use of decentralized infrastructure and middleware network, which reduces the need for expensive centralized systems and third-party services.",
-      },
+      name: "Interoperable",
+      desc: "Lineage allows for interoperability between different blockchain networks and applications, enabling data sharing and collaboration across different ecosystems.",
+    },
+    {
+      name: "Low Cost",
+      desc: "Lineage offers a cost-effective solution for NFT metadata management, with low fees and other associated costs. This is achieved through the use of decentralized infrastructure and middleware network, which reduces the need for expensive centralized systems and third-party services.",
+    },
   ];
   return (
     <div className="w-full h-auto text-white text-center">
@@ -42,14 +43,14 @@ export default function Decentralized(props: DecentralizedProps) {
         </p>
 
         <section className="">
-          <div className=" flex flex-col   mx-auto sm:py-12 lg:py-24 lg:flex-row">
+          <div className=" flex flex-col   mx-auto sm:py-12 lg:py-24 lg:!pt-0 lg:flex-row">
             <div className="flex items-start mt-8 lg:-mt-5 lg:w-1/2">
               <img
                 src={Chain.decentralized["World"]}
                 alt=""
                 className="object-cover gradient-mask-b-60 hidden lg:block w-full"
               />
-               <img
+              <img
                 src={Chain.decentralized["WorldMob"]}
                 alt=""
                 className="object-cover gradient-mask-b-60 lg:hidden w-full"
@@ -59,7 +60,9 @@ export default function Decentralized(props: DecentralizedProps) {
               {nft &&
                 nft.map((item, index) => (
                   <div
-                    className="flex-shrink max-w-full w-full sm:w-1/2 py-5 "
+                    className={`flex-shrink max-w-full w-full sm:w-1/2 py-5 lg:h-auto ${
+                      props.isMac ? "lg:max-h-[217px]" : ""
+                    } `}
                     key={`about-${index}`}
                   >
                     <div
@@ -72,12 +75,15 @@ export default function Decentralized(props: DecentralizedProps) {
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          } ${props.portrait ? "text-xl" : "text-2xl"}`}
+                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw]"}`}
                         >
                           {parse(item.name)}
                         </p>
-                        <p className="lg:text-[0.80vw] leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]
-                        ">
+                        <p
+                          className={`lg:text-[0.80vw] leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]
+                        ${props.isMac ? "lg:h-[122px] overflow-auto" : ""} 
+                        `}
+                        >
                           {item.desc}
                         </p>
                       </div>
@@ -87,7 +93,6 @@ export default function Decentralized(props: DecentralizedProps) {
             </div>
           </div>
         </section>
-        
       </div>
 
       <div className="text-center w-full relative "></div>

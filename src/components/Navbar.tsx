@@ -29,7 +29,7 @@ function loginCheck(className: any) {
       <div className="flex flex-row gap-2">
         <a
           href="mailto: contact@lineageprotocol.com"
-          className="!font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
+          className="lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full"
         >
           Contact Us
         </a>
@@ -44,7 +44,7 @@ export default function Navbar() {
       {({ open }) => (
         <>          
           <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
-            <div className="relative flex items-center justify-between p-3">
+            <div className="relative flex items-center justify-between p-3 lg:p-[1vw]">
               <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -62,7 +62,7 @@ export default function Navbar() {
                     <img
                       src={Chain.icon["Logo"]}
                       alt="logo"
-                      className="w-[60%] md:w-full hidden md:block"
+                      className="w-[60%] md:w-[30vw] hidden md:block"
                     />
                   </a>
                   <a href="/">

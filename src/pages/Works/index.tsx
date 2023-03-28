@@ -8,8 +8,7 @@ import Music from "./Music";
 import Sports from "./Sports";
 
 export default function Works() {
-  const [portrait, setPortrait] = useState(false);
-
+  const [portrait, setPortrait] = useState(false);  
   // console.log("portrait", portrait);
   useEffect(() => {
     setPortrait(window.matchMedia("(orientation: portrait)").matches);

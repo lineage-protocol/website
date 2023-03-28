@@ -27,7 +27,7 @@ export default function NftMob(props: NftMobProps) {
       >
         {props.nft &&
           props.nft.map((item:any, index:any) => (
-            <SwiperSlide className='mobile'>
+            <SwiperSlide className='mobile' key={index}>
               <div
                 className="flex-shrink max-w-full w-full"
                 key={`about-${index}`}

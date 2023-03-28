@@ -74,7 +74,7 @@ export default function Footer() {
             <div className="">
               <a
                 href="mailto: contact@lineageprotocol.com"
-                className="uppercase !font-bold py-[0.8rem]  font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
+                className="uppercase lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]  font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
                 md:absolute md:right-10"
               >
                 Contact Us
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-wrap items-center md:justify-between justify-center my-6">
           <div className="w-full md:w-1/2 px-4 ">
-            <div className="text-sm text-blueGray-500 font-semibold py-1 font-Lexend">
+            <div className="text-sm lg:text-[1vw] text-blueGray-500 font-semibold py-1 font-Lexend">
               2023.All rights reserved.
             </div>
           </div>

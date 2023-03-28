@@ -19,6 +19,7 @@ import Wilson from "../assets/images/homepage/team/Wilson.webp"
 import Iqbal from "../assets/images/homepage/team/Iqbal.webp"
 import Marek from "../assets/images/homepage/team/Marek.webp"
 import Joshua from "../assets/images/homepage/team/Joshua.webp"
+import Linkedin from "../assets/images/homepage/team/ion_logo-linkedin.svg"
 // END TEAMS
 
 // INFO
@@ -82,7 +83,8 @@ export const team: any = {
     Joel:Joel,
     Iqbal: Iqbal,
     Joshua: Joshua,
-    Marek:Marek
+    Marek:Marek,
+    Linkedin:Linkedin
 }
 
 export const social: any = {
