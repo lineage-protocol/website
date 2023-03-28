@@ -47,12 +47,12 @@ export default function Nft(props: NftProps) {
           <img
             alt="test"
             src={Chain.lines["LineL"]}
-            className="max-w-full h-56 mx-auto absolute left-40 -top-36"
+            className={`max-w-full h-48 mx-auto absolute  ${props.portrait ? "-top-[12.5vw] left-32" : "-top-36 left-44"}`}
           />
           <img
             alt="test"
             src={Chain.lines["LineR"]}
-            className="max-w-full h-56 mx-auto absolute right-40 -top-36"
+            className={`max-w-full h-48 mx-auto absolute ${props.portrait ? "right-32 -top-[12.5vw]" : "right-44 -top-36"}`}
           />
         </div>
         {/* <!-- row --> */}

@@ -8,7 +8,7 @@ export default function Intro(props: IntroProps) {
   return (
     <section className="">
       <div
-        className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] md:py-32 lg:flex ${
+        className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] lg:mt-10 md:py-32 lg:flex ${
           props.portrait ? "" : "lg:h-screen"
         } lg:items-center`}
       >

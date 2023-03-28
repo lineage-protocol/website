@@ -42,19 +42,7 @@ export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-black shadow w-screen z-20 fixed">
       {({ open }) => (
-        <>
-          <div className="bg-black w-full p-3 text-center font-Lexend">
-            {/* <p className="hidden lg:block">
-              ComposeDB: A new composable graph database powered by Ceramic. Get
-              Started
-            </p>
-            <p className="md:hidden">
-              <Marquee gradient={false}>
-                ComposeDB: A new composable graph database powered by Ceramic.
-                Get Started
-              </Marquee>
-            </p> */}
-          </div>
+        <>          
           <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
             <div className="relative flex items-center justify-between p-3">
               <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">

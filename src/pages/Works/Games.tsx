@@ -1,9 +1,12 @@
 import * as Chain from "../../constants/Chain";
-export default function Games() {
+interface InfoProps {
+  portrait: any;
+}
+export default function Games(props: InfoProps) {
   return (
-    <div className="w-full  text-white text-center relative">
+    <div className={`${props.portrait ? "h-auto" : "lg:h-screen" } w-full text-white text-center relative`}>
       <div className="w-full h-full flex flex-col justify-start gap-10 ">
-        <p className="text-3xl lg:text-[4.5vw] leading-[150%] font-Slider">Games</p>
+        <p className="text-3xl lg:text-[4.5vw] leading-[90%] font-Slider">Games</p>
 
         {/* <!-- row --> */}
 

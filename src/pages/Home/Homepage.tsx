@@ -21,7 +21,7 @@ export default function Homepage() {
       <Master>
         <Intro portrait={portrait} />
         <Nft portrait={portrait}/>
-        <Info />
+        <Info portrait={portrait}/>
         <Decentralized portrait={portrait}/>
         <Team />
       </Master>

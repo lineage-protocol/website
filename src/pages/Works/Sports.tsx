@@ -6,7 +6,7 @@ export default function Sports() {
       <div className="absolute md:-top-[25vw] w-full h-full">
         <img src={infoBg} alt="infoBg" className="" />
       </div>
-      <div className="w-full h-full flex flex-col justify-start gap-20 ">
+      <div className="w-full h-full flex flex-col justify-start gap-10 ">
         <p className="text-3xl md:text-[4.5vw] leading-[150%] font-Slider">
           Sports
         </p>
@@ -17,7 +17,7 @@ export default function Sports() {
           <img
             src={Chain.games["Sport"]}
             alt="logo"
-            className="w-full scale-[1.3]"
+            className="w-full scale-[1.2]"
           />
         </div>
 

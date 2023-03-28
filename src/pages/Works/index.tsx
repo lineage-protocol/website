@@ -19,7 +19,7 @@ export default function Works() {
     <div className="workBody">
       <Master>
         <Intro portrait={portrait}/>
-        <Games/>
+        <Games portrait={portrait}/>
         <Sports/>
         <Loyalty/>
         <Estate/>

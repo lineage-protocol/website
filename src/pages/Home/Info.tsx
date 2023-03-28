@@ -3,7 +3,10 @@ import NftMob from '../../components/Swiper/Nft';
 import infoBg from "../../assets/images/background/infoBg.webp";
 
 
-export default function Nft() {
+interface InfoProps {
+  portrait: any;
+}
+export default function Nft(props: InfoProps) {
   const nft = [
     {
       name: "Data Key",
@@ -23,7 +26,7 @@ export default function Nft() {
     },
   ];
   return (
-    <div className="w-full  text-white text-center m-auto relative ">
+    <div className={`${props.portrait ? "h-auto" : "lg:h-screen" } w-full  text-white text-center m-auto relative`}>
       <div className='absolute -top-[25vw] w-full h-full'>
         <img src={infoBg} alt="infoBg" className=''/>
       </div>

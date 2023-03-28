@@ -32,7 +32,7 @@ export default function Decentralized(props: DecentralizedProps) {
   ];
   return (
     <div className="w-full h-auto text-white text-center">
-      <div className="w-full h-full flex flex-col justify-start gap-7 ">
+      <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-10">
         <p className="font-Slider text-2xl lg:text-[5.5vw] leading-[120%] w-[80%] mx-auto">
           The first decentralized metadata network
         </p>
@@ -72,11 +72,12 @@ export default function Decentralized(props: DecentralizedProps) {
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          } ${props.portrait ? "text-xl" : "text-3xl"}`}
+                          } ${props.portrait ? "text-xl" : "text-2xl"}`}
                         >
                           {parse(item.name)}
                         </p>
-                        <p className="lg:text-[0.80vw] leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]">
+                        <p className="lg:text-[0.80vw] leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]
+                        ">
                           {item.desc}
                         </p>
                       </div>
