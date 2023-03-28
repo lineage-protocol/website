@@ -33,7 +33,7 @@ export default function Team() {
     },
   ];
   return (
-    <div className="w-full  text-white text-center relative" id="team">
+    <div className="w-full h-screen text-white text-center relative" id="team">
       <div id="overlay"></div>
       <div className="w-full h-full flex flex-col justify-start gap-7 ">
         <p className="text-3xl md:text-6xl leading-[150%] font-Slider">
@@ -54,7 +54,7 @@ export default function Team() {
                 key={`about-${index}`}
               >
                 <div
-                  className="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp"
+                  className="relative hover-grayscale-0 wow fadeInUp"
                   data-wow-duration="1s"
                 >
                   <div className="relative overflow-hidden px-6">
@@ -65,11 +65,24 @@ export default function Team() {
                     />
                   </div>
                   <div className="pt-6 text-center">
-                    <p className="text-2xl leading-[120%] font-bold mb-1 font-Slider tracking-[0.02em]">
+                    <p className="text-2xl leading-[120%] font-bold mb-2 font-Slider tracking-[0.02em]">
                       {item.name}
                     </p>
-                    <p className="text-lg font-bold mb-1 tracking-[0.04em] leading-[150%]">
+                    <p className="text-lg font-bold mb-4 tracking-[0.04em] leading-[150%]">
                       {item.subs}
+                    </p>
+                    <p className="text-lg font-bold mb-2 tracking-[0.04em] leading-[150%]">
+                      <a
+                        href="mailto: contact@lineageprotocol.com"
+                        className="inline-flex items-center !font-bold py-[0.5rem] px-10 lg:px-7   font-Slider gotShadow border border-white rounded-full"
+                      >
+                        Linkedin
+                        <img
+                          alt="test"
+                          src={Chain.team["Linkedin"]}
+                          className="max-w-full w-full h-auto mx-auto object-cover"
+                        />
+                      </a>
                     </p>
                   </div>
                 </div>
