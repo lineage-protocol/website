@@ -43,7 +43,7 @@ export default function Decentralized(props: DecentralizedProps) {
         </p>
 
         <section className="">
-          <div className=" flex flex-col   mx-auto sm:py-12 lg:py-24 lg:flex-row">
+          <div className=" flex flex-col   mx-auto sm:py-12 lg:py-24 lg:!pt-0 lg:flex-row">
             <div className="flex items-start mt-8 lg:-mt-5 lg:w-1/2">
               <img
                 src={Chain.decentralized["World"]}
