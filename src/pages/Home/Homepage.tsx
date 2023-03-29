@@ -24,7 +24,7 @@ export default function Homepage() {
       console.log("isMac", isMac)
       setMac(isMac)
     }
-  }, [mac,portrait]);
+  });
   return (
     <div className="homepageBody">
       <Master>

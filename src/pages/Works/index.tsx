@@ -13,7 +13,7 @@ export default function Works() {
   useEffect(() => {
     setPortrait(window.matchMedia("(orientation: portrait)").matches);
     window.matchMedia("(orientation: portrait)").matches;
-  }, [portrait]);
+  });
   return (
     <div className="workBody">
       <Master>
