@@ -45,7 +45,7 @@ export default function Navbar() {
         <>          
           <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
             <div className="relative flex items-center justify-between p-3 lg:p-[1vw]">
-              <div className="absolute inset-y-0 right-0 flex items-center xl:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -56,7 +56,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center xl:justify-center sm:justify-start h-full">
+              <div className="flex-1 flex items-center lg:justify-center sm:justify-start h-full">
                 <div className="group">
                   <a href="/">
                     <img
@@ -75,7 +75,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Desktop nav items */}
-                <div className="hidden xl:block w-full">
+                <div className={`hidden lg:block w-full`}>
                   <div className="flex space-x-4 h-full w-full justify-center -ml-[4rem]">
                     {navigation.map((item) => (
                       <a
@@ -97,13 +97,13 @@ export default function Navbar() {
               </div>
 
               {loginCheck(
-                "absolute inset-y-0 right-0 hidden xl:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+                "absolute inset-y-0 right-0 hidden lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
               )}
             </div>
           </div>
 
           {/* Mobile nav items */}
-          <Disclosure.Panel className="sm:hidden h-screen">
+          <Disclosure.Panel className="lg:hidden h-screen">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button

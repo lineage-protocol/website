@@ -12,7 +12,7 @@ export default function Master(props: MasterProps) {
     <>
       <div className="w-full min-h-screen flex flex-col justify-start items-center overflow-hidden">
         
-        <Navbar />
+        <Navbar/>
         {props.children}
         <Footer/>
       </div>
