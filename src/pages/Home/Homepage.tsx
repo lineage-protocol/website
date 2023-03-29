@@ -13,18 +13,28 @@ export default function Homepage() {
   const [mac, setMac] = useState(false);
 
   // console.log("portrait", portrait);
-
-  
   useEffect(() => {
-    setPortrait(window.matchMedia("(orientation: portrait)").matches);
-    window.matchMedia("(orientation: portrait)").matches;
+    const mediaQuery = window.matchMedia("(orientation: portrait)");
+    setPortrait(mediaQuery.matches);
+
     const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
     const screenWidth = window.innerWidth;
     if(isMac && screenWidth <= 1440) {
       console.log("isMac", isMac)
       setMac(isMac)
     }
-  });
+  
+    const handleOrientationChange = () => {
+      setPortrait(mediaQuery.matches);
+    };
+  
+    mediaQuery.addListener(handleOrientationChange);
+  
+    return () => {
+      mediaQuery.removeListener(handleOrientationChange);
+    };
+  }, [mac, portrait]);
+  
   return (
     <div className="homepageBody">
       <Master>
