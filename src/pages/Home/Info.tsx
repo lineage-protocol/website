@@ -18,11 +18,11 @@ export default function Nft(props: InfoProps) {
     },
     {
       name: "IPFS DAG",
-      desc: "A service that converts metadata to a DAG format, making it easier to store and retrieve metadata using IPFS."
+      desc: "A service that converts metadata to a DAG format, making it easier to store and retrieve metadata using IPFS.<br/><br/>"
     },
     {
       name: "Cryptographic<br/>Keypair",
-      desc: "For secure metadata signing and verification."
+      desc: "For secure metadata signing and verification.<br/><br/><br/><br/>"
     },
   ];
   return (
@@ -36,7 +36,7 @@ export default function Nft(props: InfoProps) {
           {nft &&
             nft.map((item, index) => (
               <div
-                className="flex items-center flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[21%] boxAdd h-[25vw] py-5 "
+                className="flex  items-center flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[21%] boxAdd h-[25vw] py-5 "
                 key={`about-${index}`}
               >
                 <div
@@ -48,7 +48,7 @@ export default function Nft(props: InfoProps) {
                       {parse(item.name)}
                     </p>
                     <p className=" text-[1.2vw] leading-[150%] font-bold mb-1 text-left px-10 break-words w-[95%]">
-                      {item.desc}
+                      {parse(item.desc)}
                     </p>
                   </div>
                 </div>
