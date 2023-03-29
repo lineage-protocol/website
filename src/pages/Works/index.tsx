@@ -11,8 +11,18 @@ export default function Works() {
   const [portrait, setPortrait] = useState(false);  
   // console.log("portrait", portrait);
   useEffect(() => {
-    setPortrait(window.matchMedia("(orientation: portrait)").matches);
-    window.matchMedia("(orientation: portrait)").matches;
+    const mediaQuery = window.matchMedia("(orientation: portrait)");
+    setPortrait(mediaQuery.matches);
+
+    const handleOrientationChange = () => {
+      setPortrait(mediaQuery.matches);
+    };
+  
+    mediaQuery.addListener(handleOrientationChange);
+  
+    return () => {
+      mediaQuery.removeListener(handleOrientationChange);
+    };
   }, [portrait]);
   return (
     <div className="workBody">
