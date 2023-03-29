@@ -1,5 +1,5 @@
-
-import parse from 'html-react-parser';
+import React from "react";
+import parse from "html-react-parser";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,7 @@ import { Pagination } from "swiper";
 
 interface NftMobProps {
   nft: any;
-  type: any
+  type: any;
 }
 export default function NftMob(props: NftMobProps) {
   return (
@@ -26,32 +26,48 @@ export default function NftMob(props: NftMobProps) {
         className="mySwiper md:hidden"
       >
         {props.nft &&
-          props.nft.map((item:any, index:any) => (
-            <SwiperSlide className='mobile' key={index}>
+          props.nft.map((item: any, index: any) => (
+            <SwiperSlide className="mobile" key={index}>
               <div
                 className="flex-shrink max-w-full w-full"
                 key={`about-${index}`}
               >
                 <div
-                  className={`relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp ${props.type==="info" && ("boxAdd h-64 py-4")}`}
+                  className={`relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp ${
+                    props.type === "info" && "boxAdd h-64 py-4"
+                  }`}
                   data-wow-duration="1s"
                 >
-                  <div className={`relative overflow-hidden  ${props.type==="info" && ("hidden")}`}>
+                  <div
+                    className={`relative overflow-hidden  ${
+                      props.type === "info" && "hidden"
+                    }`}
+                  >
                     <img
                       alt="test"
                       src={Chain.nft[item.icon]}
                       className="max-w-full w-full h-auto mx-auto "
                     />
                   </div>
-                  <div className={`pt-6 text-center text-lg ${props.type==="info" && ("!text-left pl-5 !text-xl")}`}>
+                  <div
+                    className={`pt-6 text-center text-lg ${
+                      props.type === "info" && "!text-left pl-5 !text-xl"
+                    }`}
+                  >
                     <p className="leading-normal font-bold mb-1 uppercase  font-Slider">
                       {parse(item.name)}
                     </p>
                   </div>
 
-                  <p className={`text-base leading-normal font-bold mb-1 mt-3 text-left px-5 break-words lg:w-10/12 ${props.type!=="info" && ("hidden")}`}>
-                      {item.desc}
-                    </p>
+                  {/* <p className={`text-base leading-normal font-bold mb-1 mt-3 text-left px-5 break-words lg:w-10/12 ${props.type!=="info" && ("hidden")}`}>                    
+                  {parse(item.desc)}
+                  </p> */}
+                  <p
+                    className={`text-base leading-normal font-bold mb-1 mt-3 text-left px-5 break-words lg:w-10/12 ${
+                      props.type !== "info" && "hidden"
+                    }`}
+                    dangerouslySetInnerHTML={{ __html: item.desc }}
+                  />
                 </div>
               </div>
             </SwiperSlide>
