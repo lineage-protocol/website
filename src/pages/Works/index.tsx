@@ -20,9 +20,9 @@ export default function Works() {
       <Master>
         <Intro portrait={portrait}/>
         <Games portrait={portrait}/>
-        <Sports/>
-        <Loyalty/>
-        <Estate/>
+        <Sports portrait={portrait}/>
+        <Loyalty portrait={portrait}/>
+        <Estate portrait={portrait}/>
 
         <Music/>
       </Master>

@@ -4,7 +4,7 @@ interface InfoProps {
 }
 export default function Games(props: InfoProps) {
   return (
-    <div className={`${props.portrait ? "h-auto" : "lg:h-screen" } w-full text-white text-center relative`}>
+    <div className={`${props.portrait ? "h-auto pb-10" : "lg:h-screen" } w-full text-white text-center relative`}>
       <div className="w-full h-full flex flex-col justify-start gap-10 ">
         <p className="text-3xl lg:text-[4.5vw] leading-[90%] font-Slider">Games</p>
 
