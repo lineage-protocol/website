@@ -29,7 +29,7 @@ export default function ChartsSwiper(props: NftMobProps) {
         {props.nft &&
           props.nft.map((item: any, index: any) => (
             <SwiperSlide>
-              <div className="flex-wrap flex-row  mx-6 md:mx-0 px-[1%]  mt-5 flex bg-[#252162] rounded-3xl py-4 md:py-10">
+              <div className="flex-wrap flex-row  mx-6 md:mx-0 px-[1%]  mt-[1rem] flex bg-[#252162] rounded-3xl py-4 md:py-[1rem]">
                 <div className="flex-shrink max-w-full md:w-1/2  ">
                   <div
                     className="relative overflow-hidden hover-grayscale-0 wow fadeInUp flex flex-col gap-3 px-5 h-full justify-center"

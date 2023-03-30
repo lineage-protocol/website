@@ -53,7 +53,7 @@ export default function Music() {
     <div className="w-full lg:max-h-screen text-white text-center relative">
       <div className=" pt-12 pr-0 pb-14 pl-0 ">
         <div
-          className="w-full pt-4  pb-6 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 lg:py-12 sm:space-y-8 lg:space-y-16
+          className="w-full pt-4  pb-6 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 lg:py-28 sm:space-y-8 lg:space-y-16
       max-w-full"
         >
           <div className="flex flex-col-reverse items-center sm:px-5 lg:flex-row gap-10">
