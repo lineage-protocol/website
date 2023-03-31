@@ -34,7 +34,7 @@ export default function Decentralized(props: DecentralizedProps) {
   return (
     <div className="w-full h-auto text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-10">
-        <p className="font-Slider text-2xl lg:text-6xl leading-[120%] w-[60%] mx-auto">
+        <p className="font-Slider text-2xl lg:text-6xl leading-[120%] px-10 md:px-0 md:w-[60%] mx-auto">
           The first decentralized metadata network
         </p>
         <p className="text-sm lg:text-xl leading-[150%] lg:w-[60%] px-10 mx-auto">

@@ -10,13 +10,13 @@ export default function Loyalty(props:LoyaltyProps) {
           className="max-w-full"
         >
           <div className={`w-full flex flex-col-reverse items-center sm:px-5 md:flex-row-reverse gap-0 m-auto justify-center ${props.portrait ? "justify-center" : ""}`}>
-            <div className="flex flex-col items-start justify-start w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-[50%]">
+            <div className="flex flex-col items-start justify-start w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-[50%] ">
               <div
                 className="flex flex-col items-start justify-start h-full space-y-3 transform md:pr-10 lg:pr-16
             md:space-y-5"
               >
-                <div className="w-full lg:h-full flex flex-col  justify-end mx-[2vw] gap-5">
-                  <p className="font-Slider text-3xl lg:text-7xl leading-[120%] text-left break-words w-[25vw]">
+                <div className="w-full lg:h-full flex flex-col  justify-end mx-5 md:mx-[2vw] gap-5">
+                  <p className="font-Slider text-3xl lg:text-7xl leading-[120%] text-left break-words md:w-[25vw]">
                     Loyalty System
                   </p>
                   <p className="text-sm lg:text-base leading-[150%] pr-10 text-left break-words lg:w-[550px]">
@@ -35,7 +35,7 @@ export default function Loyalty(props:LoyaltyProps) {
               <div className="block">
                 <img
                    src={Chain.estate["Loyalty2"]}
-                  className="object-cover rounded-lg  lg:w-full h-full 4k:w-[50vw]"
+                  className="object-cover rounded-lg  px-16 md:px-0 lg:w-full h-full 4k:w-[50vw]"
                 />
               </div>
             </div>
