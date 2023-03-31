@@ -65,16 +65,16 @@ export default function Footer() {
                 <img
                   src={Chain.icon["Footer"]}
                   alt="logo"
-                  className="w-3/5 md:w-1/3"
+                  className="w-3/5 md:w-1/3 2xl:w-1/4"
                 />
               </a>
             </div>
           </div>
           <div className="">
             <div className="">
-              <a
+              <a              
                 href="mailto: contact@lineageprotocol.com"
-                className="uppercase lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]  font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
+                className="uppercase  lg:text-xl !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
                 md:absolute md:right-10"
               >
                 Contact Us
@@ -82,9 +82,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center md:justify-between justify-center my-6">
+        <div className="flex flex-wrap items-center md:justify-between justify-center my-6  2xl:my-0">
           <div className="w-full md:w-1/2 px-4 ">
-            <div className="text-sm lg:text-[1vw] text-blueGray-500 font-semibold py-1 font-Lexend">
+            <div className="text-sm lg:text-lg text-blueGray-500 font-semibold py-1 font-Lexend">
               2023.All rights reserved.
             </div>
           </div>

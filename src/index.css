@@ -30,6 +30,10 @@ body {
 
 }
 /* Add Max Width 1440 for desktop devices */
+.gotMaxWidthNavbar {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
 .gotMaxWidth, .gotMaxWidthHomepage, .gotMaxWidthInfo, .gotMaxWidthTeam {
   max-width: 1440px;
   margin-right: auto;

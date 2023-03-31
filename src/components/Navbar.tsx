@@ -43,8 +43,8 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-black shadow w-screen z-20 fixed">
       {({ open }) => (
         <>          
-          <div className="gotMaxWidth max-w-full mx-auto px-0 lg:px-12 pr-4">
-            <div className="relative flex items-center justify-between p-3 lg:p-[1vw]">
+          <div className="gotMaxWidthNavbar max-w-full mx-auto px-0 lg:px-12 pr-4">
+            <div className="relative flex items-center justify-between p-3 lg:p-[1vw] 2xl:p-5">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
