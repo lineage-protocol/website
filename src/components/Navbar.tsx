@@ -29,7 +29,7 @@ function loginCheck(className: any) {
       <div className="flex flex-row gap-2">
         <a
           href="mailto: contact@lineageprotocol.com"
-          className="lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full"
+          className="lg:text-xl !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full"
         >
           Contact Us
         </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-black shadow w-screen z-20 fixed">
       {({ open }) => (
         <>          
-          <div className="max-w-full mx-auto px-0 lg:px-12 pr-4">
+          <div className="gotMaxWidth max-w-full mx-auto px-0 lg:px-12 pr-4">
             <div className="relative flex items-center justify-between p-3 lg:p-[1vw]">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button */}
@@ -62,7 +62,7 @@ export default function Navbar() {
                     <img
                       src={Chain.icon["Logo"]}
                       alt="logo"
-                      className="w-[60%] md:w-[30vw] hidden md:block"
+                      className="w-[60%] md:w-full hidden md:block"
                     />
                   </a>
                   <a href="/">
@@ -85,7 +85,7 @@ export default function Navbar() {
                           item.current
                             ? "text-white hover:text-[#6C95CD]"
                             : "text-white  hover:text-[#6C95CD] hover:-mt-1",
-                          "px-3 py-2 flex justify-center items-center font-Rubik text-sm md:text-[1.3vw] font-Slider leading-[23px] tracking-[0.02em]"
+                          "px-3 py-2 flex justify-center items-center font-Rubik text-sm md:text-xl   font-Slider leading-[23px] tracking-[0.02em]"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

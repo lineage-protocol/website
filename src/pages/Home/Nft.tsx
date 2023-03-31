@@ -28,18 +28,18 @@ export default function Nft(props: NftProps) {
     },
   ];
   return (
-    <div className="w-full  text-white text-center">
+    <div className="gotMaxWidth w-full  text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-44 ">
-        <p className={`${props.portrait ? "lg:text-4xl" : "lg:text-[3vw]"} text-3xl  leading-[150%] font-Slider`}>
+        <p className={`${props.portrait ? "lg:text-4xl" : "lg:text-7xl"} text-3xl  leading-[150%] font-Slider`}>
           Unleashing the true potential of NFTs
         </p>
-        <p className="lg:text-[1.4vw] leading-[150%] md:w-[60%] px-10 mx-auto">
+        <p className="lg:text-base leading-[150%] md:w-[60%] px-10 mx-auto">
           Lineage empowers limitless NFT possibilities with dynamic evolution
           and collaborative ownership
         </p>
         <a
           href="/work"
-          className="lg:text-[1vw] !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full lg:w-1/6 mx-auto "
+          className="lg:text-sm !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full lg:w-1/6 mx-auto "
         >
           How It Works
         </a>
@@ -75,7 +75,7 @@ export default function Nft(props: NftProps) {
                     />
                   </div>
                   <div className="pt-6 text-center">
-                    <p className="text-lg lg:text-[1.3vw] leading-[120%] tracking-[0.02em] font-bold mb-1 uppercase font-Slider">
+                    <p className="text-lg lg:text-lg leading-[120%] tracking-[0.02em] font-bold mb-1 uppercase font-Slider">
                       {item.name}
                     </p>
                   </div>

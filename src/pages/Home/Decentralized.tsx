@@ -34,10 +34,10 @@ export default function Decentralized(props: DecentralizedProps) {
   return (
     <div className="w-full h-auto text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-10">
-        <p className="font-Slider text-2xl lg:text-[5.5vw] leading-[120%] w-[80%] mx-auto">
+        <p className="font-Slider text-2xl lg:text-6xl leading-[120%] w-[60%] mx-auto">
           The first decentralized metadata network
         </p>
-        <p className="text-sm lg:text-[1.4vw] leading-[150%] lg:w-[60%] px-10 mx-auto">
+        <p className="text-sm lg:text-xl leading-[150%] lg:w-[60%] px-10 mx-auto">
           Lineage Protocol will reinvent the way NFT metadata is handled by
           creating a decentralized network focused solely on NFT metadata.
         </p>
@@ -75,12 +75,13 @@ export default function Decentralized(props: DecentralizedProps) {
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw]"}`}
+                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw] 2xl:text-5xl"}`}
                         >
                           {parse(item.name)}
                         </p>
                         <p
-                          className={`lg:text-[0.80vw] leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]
+                          className={`lg:text-[0.80vw] 2xl:text-xl leading-[150%] tracking-[0.05em] font-bold mb-1 text-left px-5 break-words lg:w-10/12 opacity-[0.7]
+                          
                         ${props.isMac ? "lg:h-[122px] overflow-auto" : ""} 
                         `}
                         >

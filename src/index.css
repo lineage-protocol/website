@@ -24,15 +24,31 @@ body {
 }
 
 
+@media screen and (max-width: 4000px) and (min-width: 2000px){
+.gotMaxWidthHomepage {
+  height: 80vh;
+
+}
 /* Add Max Width 1440 for desktop devices */
-/* section {
+.gotMaxWidth, .gotMaxWidthHomepage, .gotMaxWidthInfo, .gotMaxWidthTeam {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
-} */
+  border: 1px solid red;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.gotMaxWidthInfo {
+  max-width: 2000px;
+}
+.gotMaxWidthTeam {
+  max-width: 2100px;
+}
 /* End Add */
+}
+
 
 /* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {

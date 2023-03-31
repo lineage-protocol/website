@@ -50,10 +50,10 @@ export default function Music() {
     },
   ];
   return (
-    <div className="w-full lg:max-h-screen text-white text-center relative">
+    <div className="gotMaxWidth w-full lg:max-h-screen text-white text-center relative">
       <div className=" pt-12 pr-0 pb-14 pl-0 ">
         <div
-          className="w-full pt-4  pb-6 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 lg:py-28 sm:space-y-8 lg:space-y-16
+          className="w-full pt-4  pb-6 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 lg:py-0 sm:space-y-8 lg:space-y-16
       max-w-full"
         >
           <div className="flex flex-col-reverse items-center sm:px-5 lg:flex-row gap-10">
@@ -63,10 +63,10 @@ export default function Music() {
             lg:space-y-5"
               >
                 <div className="w-full lg:h-full flex flex-col lg:mx-[5vw] gap-5 mx-5">
-                  <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] text-left">
+                  <p className="font-Slider text-3xl lg:text-7xl leading-[120%] text-left">
                     Music
                   </p>
-                  <p className="text-sm lg:text-[1.1vw] leading-[150%] pr-10 text-left break-words md:w-[80%]">
+                  <p className="text-sm lg:text-base leading-[150%] pr-10 text-left break-words md:w-[80%]">
                     Music collaborations are another potential use case for
                     Lineage Protocol. NFTs representing songs can be created,
                     with each subset of metadata representing a different
@@ -83,14 +83,14 @@ export default function Music() {
             </div>
             <div className="w-full lg:w-1/2">
               <div className="flex flex-col gap-3">
-                <p className="font-Slider text-3xl lg:text-[1.4vw] leading-[120%] text-left mx-5">
+                <p className="font-Slider text-3xl lg:text-xl leading-[120%] text-left mx-5">
                   Top charts
-                </p>                
+                </p>
                 <div className="flex-shrink max-w-full w-full  gap-1 flex">
                   <ChartsSwiper nft={musicList} />
                 </div>
 
-                <p className="font-Slider text-3xl lg:text-[1.4vw] leading-[120%] text-left mt-5 mx-5">
+                <p className="font-Slider text-3xl lg:text-xl leading-[120%] text-left mt-5 mx-5">
                   New releases.
                 </p>
                 <div className="flex-shrink max-w-full w-full  gap-1 flex">
@@ -115,14 +115,14 @@ export default function Music() {
                             className="lg:w-[7vw]"
                           />
                           <div className="flex flex-col my-auto">
-                            <p className="text-base lg:text-[1.4vw] leading-[120%] text-left px-1">
-                              Test1
+                            <p className="text-base lg:text-base leading-[120%] text-left px-1">
+                              Song Title 1
                             </p>
-                            <p className="text-base lg:text-[1vw] leading-[120%] text-left px-1 text-white opacity-60">
-                              Test1
+                            <p className="text-base lg:text-base leading-[120%] text-left px-1 text-white opacity-60">
+                              Singer Name
                             </p>
                           </div>
-                        </div>                        
+                        </div>
                       </div>
                       <div className="flex-shrink max-w-full w-full  ">
                         <div
@@ -136,7 +136,7 @@ export default function Music() {
                             alt="logo"
                             className="object-cover w-1/2"
                           />
-                        </div>                        
+                        </div>
                       </div>
                     </div>
                   </div>
