@@ -9,7 +9,7 @@ export default function Loyalty(props:LoyaltyProps) {
         <div
           className="max-w-full"
         >
-          <div className={`w-full flex flex-col-reverse items-center sm:px-5 md:flex-row-reverse gap-0 m-auto ${props.portrait ? "justify-center" : ""}`}>
+          <div className={`w-full flex flex-col-reverse items-center sm:px-5 md:flex-row-reverse gap-0 m-auto justify-center ${props.portrait ? "justify-center" : ""}`}>
             <div className="flex flex-col items-start justify-start w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-[50%]">
               <div
                 className="flex flex-col items-start justify-start h-full space-y-3 transform md:pr-10 lg:pr-16
