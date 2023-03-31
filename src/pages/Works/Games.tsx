@@ -4,9 +4,9 @@ interface InfoProps {
 }
 export default function Games(props: InfoProps) {
   return (
-    <div className={`${props.portrait ? "h-auto pb-10" : "lg:h-screen" } w-full text-white text-center relative`}>
-      <div className="w-full h-full flex flex-col justify-start gap-10 ">
-        <p className="text-3xl lg:text-[4.5vw] leading-[90%] font-Slider">Games</p>
+    <div className={`gotMaxWidth ${props.portrait ? "h-auto pb-10" : "lg:h-screen 2xl:h-auto" } w-full text-white text-center relative`}>
+      <div className="w-full h-full flex flex-col justify-center gap-5 ">
+        <p className="text-3xl lg:text-7xl leading-[90%] font-Slider">Games</p>
 
         {/* <!-- row --> */}
 
@@ -25,7 +25,7 @@ export default function Games(props: InfoProps) {
             className="w-full px-5"
           />
         </div>        
-        <p className="lg:text-[1.1vw] leading-[150%] lg:w-[60%] px-10 mx-auto">
+        <p className="lg:text-base leading-[150%] lg:w-[60%] px-10 mx-auto">
           Using Lineage Protocol, game developers can create a more engaging and
           rewarding gaming experience for players. For example, if a player
           completes a difficult challenge in the game, their in-game weapon or

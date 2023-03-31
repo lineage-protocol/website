@@ -8,16 +8,16 @@ export default function Intro(props: IntroProps) {
   return (
     <section className="">
       <div
-        className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] lg:mt-10 md:py-32 lg:flex ${
-          props.portrait ? "" : "lg:h-screen"
+        className={`gotMaxWidth relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] lg:mt-10 md:py-32 lg:flex ${
+          props.portrait ? "" : "lg:h-screen 2xl:h-auto 2xl:py-72 2xl:pt-96"
         } lg:items-center`}
       >
         <div className={`${props.portrait ? "mt-28" : ""}`}>
-          <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
+          <p className="font-Slider text-3xl lg:text-7xl leading-[120%] w-[80%] md:w-[60%]">
             Building the future of NFTs today
           </p>
 
-          <p className="text-sm lg:text-[1.4vw] leading-[150%] pr-10 lg:w-[50%]">
+          <p className="text-sm lg:text-xl leading-[150%] pr-10 lg:w-[50%]">
             Lineage is a decentralized metadata network that allows developers
             to deploy Dynamic NFTs with just a few lines of code. Using Lineage,
             NFT metadata can now be tracked, evolve, and become interoperable

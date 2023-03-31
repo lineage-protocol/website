@@ -29,10 +29,10 @@ export default function ChartsSwiper(props: NftMobProps) {
         {props.nft &&
           props.nft.map((item: any, index: any) => (
             <SwiperSlide>
-              <div className="flex-wrap flex-row  mx-6 md:mx-0 px-[1%]  mt-[1rem] flex bg-[#252162] rounded-3xl py-4 md:py-[1rem]">
+              <div className="flex-wrap flex-row  mx-6 md:mx-0 px-[1%]  mt-[0.5rem] flex bg-[#252162] rounded-3xl py-4 md:py-[1rem]">
                 <div className="flex-shrink max-w-full md:w-1/2  ">
                   <div
-                    className="relative overflow-hidden hover-grayscale-0 wow fadeInUp flex flex-col gap-3 px-5 h-full justify-center"
+                    className="relative overflow-hidden hover-grayscale-0 wow fadeInUp flex flex-col gap-0 px-5 h-full justify-center"
                     data-wow-duration="1s"
                   >
                     <img
@@ -40,13 +40,13 @@ export default function ChartsSwiper(props: NftMobProps) {
                       alt="logo"
                       className=" lg:w-full"
                     />
-                    <p className="text-base lg:text-[1.4vw] leading-[120%] text-left px-1">
+                    <p className="text-base lg:text-base leading-[120%] text-left px-1 mt-4">
                       {item.title}
                     </p>
-                    <p className="text-base lg:text-[1vw] leading-[120%] text-left px-1 text-white opacity-60">
+                    <p className="text-base lg:text-base leading-[120%] text-left px-1 text-white opacity-60">
                       {item.name}
                     </p>
-                    <p className="text-base lg:text-[1vw] leading-[120%] text-left px-1 text-white mt-4">
+                    <p className="text-base lg:text-base leading-[120%] text-left px-1 text-white mt-2">
                       {item.time}
                     </p>
                   </div>

@@ -26,17 +26,17 @@ export default function Nft(props: InfoProps) {
     },
   ];
   return (
-    <div className={`${props.portrait ? "h-auto" : "lg:h-screen" } w-full  text-white text-center m-auto relative`}>
+    <div className={`${props.portrait ? "h-auto" : "lg:h-screen 2xl:h-auto" } w-full  text-white text-center m-auto relative`}>
       <div className='absolute -top-[25vw] w-full h-full'>
-        <img src={infoBg} alt="infoBg" className=''/>
+        <img src={infoBg} alt="infoBg" className='w-full'/>
       </div>
-      <div className="w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
+      <div className="gotMaxWidthInfo w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
         {/* <!-- row --> */}
         <div className=" flex-wrap flex-row -mx-4  px-[4%] py-10 mt-10 justify-center items-center gap-6 hidden md:flex">
           {nft &&
             nft.map((item, index) => (
               <div
-                className="flex  items-center flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[21%] boxAdd h-[25vw] py-5 "
+                className="flex  items-center flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-[21%] boxAdd h-[25vw] 2xl:h-[500px] py-5 "
                 key={`about-${index}`}
               >
                 <div
@@ -44,10 +44,10 @@ export default function Nft(props: InfoProps) {
                   data-wow-duration="1s"
                 >
                   <div className="pt-6 text-center">
-                    <p className={`text-[1.7vw] font-bold mb-1 font-Slider text-left px-10 ${item.name === "Networking" ? ("leading-[5rem]") : ("leading-normal")}`}>
+                    <p className={`text-2xl 2xl:text-4xl font-bold mb-1 font-Slider text-left px-10 ${item.name === "Networking" ? ("leading-[5rem]") : ("leading-normal")}`}>
                       {parse(item.name)}
                     </p>
-                    <p className=" text-[1.2vw] leading-[150%] font-bold mb-1 text-left px-10 break-words w-[95%]">
+                    <p className=" text-sm 2xl:text-xl leading-[150%] font-bold mb-1 text-left px-10 break-words w-[95%]">
                       {parse(item.desc)}
                     </p>
                   </div>

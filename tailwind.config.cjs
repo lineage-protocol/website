@@ -18,8 +18,8 @@ module.exports = {
         md: { min: "768px" }, // iPads, Tablets
         lg: { min: "1024px" }, // Small screens, laptops
         xl: { min: "1280px" }, // Desktops, large screens
-        "2xl": { min: "1536px" }, // Extra large screens, TV
-        "4k": { min: "2560px" },
+        "2xl": { min: "2000px" }, // Extra large screens, TV
+        "3xl": { min: "1536" },
       },
     },
   },

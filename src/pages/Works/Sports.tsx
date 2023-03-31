@@ -5,12 +5,12 @@ interface LoyaltyProps {
 }
 export default function Sports(props:LoyaltyProps) {
   return (
-    <div className={`w-full l${props.portrait ? "h-auto" : "lg:h-screen"}  text-white text-center relative  `}>
+    <div className={`w-full l${props.portrait ? "h-auto" : "lg:h-screen 2xl:h-auto"}  text-white text-center relative  `}>
       <div className="absolute md:-top-[25vw] w-full h-full">
         <img src={infoBg} alt="infoBg" className="w-full" />
       </div>
-      <div className="w-full h-full flex flex-col justify-center gap-1 ">
-        <p className="text-3xl md:text-[4.5vw] leading-[150%] font-Slider">
+      <div className="gotMaxWidth w-full h-full flex flex-col justify-center gap-1 ">
+        <p className="text-3xl md:text-7xl leading-[150%] font-Slider">
           Sports
         </p>
 
@@ -24,7 +24,7 @@ export default function Sports(props:LoyaltyProps) {
           />
         </div>
 
-        <p className="md:text-[1vw] leading-[150%] md:w-[60%] px-10 mx-auto">
+        <p className="md:text-base leading-[150%] md:w-[60%] px-10 mx-auto">
           Sports cards are another potential use case for Lineage Protocol. NFTs
           representing sports cards can be created that evolve over time based
           on player performance, market demand, or other factors. This allows
