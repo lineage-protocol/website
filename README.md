@@ -1,5 +1,5 @@
 # Getting Started
-[Demo](https://lineage-main.vercel.app/)
+[Live](https://lineageprotocol.com/)
 ## Prerequisites
 
 - Node 19 (v19.1.0)
@@ -10,4 +10,4 @@
 - `yarn build` - Bundles the app into static files for production
 
 ## UI Design
-[Figma](https://www.figma.com/file/HTN4QKbXQor6fn6CFsRheo/Lineage-site?node-id=442%3A1791&t=pthjJ8Lb0dJP3oRT-0)
+[Figma](https://www.figma.com/file/J1wDsX2xijfCOX55gFRTpj/Lineage-Website-2.0?node-id=20-116&t=Qt3QLMNzCrKpiS8c-0)
