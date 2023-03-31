@@ -23,6 +23,17 @@ body {
   background: #000000;
 }
 
+
+/* Add Max Width 1440 for desktop devices */
+/* section {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+} */
+/* End Add */
+
 /* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {
   body {

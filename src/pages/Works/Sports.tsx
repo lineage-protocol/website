@@ -7,7 +7,7 @@ export default function Sports(props:LoyaltyProps) {
   return (
     <div className={`w-full l${props.portrait ? "h-auto" : "lg:h-screen"}  text-white text-center relative  `}>
       <div className="absolute md:-top-[25vw] w-full h-full">
-        <img src={infoBg} alt="infoBg" className="" />
+        <img src={infoBg} alt="infoBg" className="w-full" />
       </div>
       <div className="w-full h-full flex flex-col justify-center gap-1 ">
         <p className="text-3xl md:text-[4.5vw] leading-[150%] font-Slider">

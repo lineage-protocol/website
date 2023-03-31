@@ -1,4 +1,3 @@
-import Image from "../../assets/images/spiral.gif";
 
 interface IntroProps {
   portrait: any;
@@ -6,42 +5,24 @@ interface IntroProps {
 
 export default function Intro(props: IntroProps) {
   return (
-    <section className="w-full">
+    <section className="">
       <div
-        className={`relative mx-auto w-full md:pl-24 px-4 py-[60vw] md:py-32 lg:flex ${
+        className={`relative mx-auto max-w-screen-xl md:pl-24 px-4 py-[60vw] lg:mt-10 md:py-32 lg:flex justify-center ${
           props.portrait ? "" : "lg:h-screen"
-        } lg:items-end`}
+        } lg:items-center`}
       >
-        <div className={`${props.portrait ? "mt-48" : ""}`}>
-          <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-full">
-            How it Works
+        <div className={`${props.portrait ? "mt-28" : ""}`}>
+          <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] text-center ">
+          How it Works
           </p>
+
+          <p className="text-sm lg:text-[1.4vw] leading-[150%] lg:pr-10 lg:w-[50vw] m-auto">
+          Lineage is a decentralized middleware that allows developers to deploy dynamic NFTs with a few lines of code. Using Lineage, NFT metadata can now be tracked, evolve, and become interoperable across projects
+          </p>
+          
         </div>
 
-        <div className="">
-          <img
-            alt="Lineage"
-            src={Image}
-            className="mix-blend-screen  w-full lg:w-[55vw] absolute -left-[15%] top-0 lg:top-[4rem] overflow-x-visible opacity-50 "
-            style={{ transform: "rotate(143deg)" }}
-          />
-        </div>
       </div>
     </section>
-    // <div className="w-full h-screen !max-h-screen text-white flex flex-col justify-between relative">
-    //   <div className="text-center w-full lg:relative ">
-    //     <img
-    //       alt="Lineage"
-    //       src={Image}
-    //       className="mix-blend-screen  w-full lg:w-[55vw] absolute -left-[15%] top-0 lg:top-[4rem] overflow-x-visible opacity-50 "
-    //       style={{ transform: "rotate(143deg)" }}
-    //     />
-    //   </div>
-    //   <div className="w-full lg:h-full flex flex-col  justify-end mx-[6vw] gap-5 absolute lg:!relative top-0 h-[70vh] my-[5vw]">
-    //     <p className="font-Slider text-3xl lg:text-[5vw] leading-[120%] w-[80%] md:w-[60%]">
-    //       How it Works
-    //     </p>
-    //   </div>
-    // </div>
   );
 }
