@@ -13,7 +13,7 @@ export default function Intro(props: IntroProps) {
         } lg:items-center`}
       >
         <div className={`${props.portrait ? "mt-28" : ""}`}>
-          <p className="font-Slider text-3xl lg:text-8xl leading-[120%] w-[80%] md:w-[50%] mb-6">
+          <p className="font-Slider text-3xl lg:text-8xl leading-[120%] w-[80%] md:w-[50%] lg:w-[65%] mb-6">
             Building the future of NFTs today
           </p>
 
