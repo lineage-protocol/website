@@ -29,7 +29,7 @@ function loginCheck(className: any) {
       <div className="flex flex-row gap-2">
         <a
           href="mailto: contact@lineageprotocol.com"
-          className="lg:text-xl !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full"
+          className="lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full"
         >
           Contact Us
         </a>

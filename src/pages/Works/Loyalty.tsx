@@ -31,11 +31,11 @@ export default function Loyalty(props:LoyaltyProps) {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-[35%] flex justify-center">
+            <div className="w-full md:w-[50%] lg:w-[35%] flex justify-center">
               <div className="block">
                 <img
                    src={Chain.estate["Loyalty2"]}
-                  className="object-cover rounded-lg  px-16 md:px-0 lg:w-full h-full 4k:w-[50vw]"
+                  className="object-cover rounded-lg  px-16 md:w-[90%] md:m-auto md:px-0 lg:w-full h-full 4k:w-[50vw]"
                 />
               </div>
             </div>

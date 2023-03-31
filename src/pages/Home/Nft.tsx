@@ -47,12 +47,12 @@ export default function Nft(props: NftProps) {
           <img
             alt="test"
             src={Chain.lines["LineL"]}
-            className={`max-w-full h-48 mx-auto absolute  ${props.portrait ? "-top-[12.5vw] left-32" : "-top-36 left-44"}`}
+            className={`max-w-full h-48 mx-auto absolute  ${props.portrait ? "-top-[12.5vw] left-32 md:left-20 md:-top-[15.5vw]" : "-top-36 left-44"}`}
           />
           <img
             alt="test"
             src={Chain.lines["LineR"]}
-            className={`max-w-full h-48 mx-auto absolute ${props.portrait ? "right-32 -top-[12.5vw]" : "right-44 -top-36"}`}
+            className={`max-w-full h-48 mx-auto absolute ${props.portrait ? "right-32 -top-[12.5vw] md:-top-[15.5vw] md:right-20" : "right-44 -top-36"}`}
           />
         </div>
         {/* <!-- row --> */}
@@ -60,7 +60,7 @@ export default function Nft(props: NftProps) {
           {nft &&
             nft.map((item, index) => (
               <div
-                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5"
+                className="flex-shrink max-w-full w-2/3 sm:w-1/2 md:w-4/12 lg:w-1/5"
                 key={`about-${index}`}
               >
                 <div
