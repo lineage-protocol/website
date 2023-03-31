@@ -6,8 +6,8 @@ interface LoyaltyProps {
 export default function Sports(props:LoyaltyProps) {
   return (
     <div className={`w-full l${props.portrait ? "h-auto" : "lg:h-screen 2xl:h-auto"}  text-white text-center relative  `}>
-      <div className="absolute md:-top-[25vw] w-full h-full">
-        <img src={infoBg} alt="infoBg" className="w-full" />
+      <div className="absolute md:-top-[25vw] 2xl:mt-0 w-full h-full">
+        <img src={infoBg} alt="infoBg" className="w-full 2xl:h-full 2xl:object-cover" />
       </div>
       <div className="gotMaxWidth w-full h-full flex flex-col justify-center gap-1 ">
         <p className="text-3xl md:text-7xl leading-[150%] font-Slider">

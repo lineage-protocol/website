@@ -34,7 +34,7 @@ export default function Decentralized(props: DecentralizedProps) {
   return (
     <div className="w-full h-auto text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-10">
-        <p className="font-Slider text-2xl lg:text-6xl leading-[120%] w-[60%] mx-auto">
+        <p className="font-Slider text-2xl lg:text-6xl leading-[120%] px-10 md:px-0 md:w-[60%] mx-auto">
           The first decentralized metadata network
         </p>
         <p className="text-sm lg:text-xl leading-[150%] lg:w-[60%] px-10 mx-auto">
@@ -56,7 +56,7 @@ export default function Decentralized(props: DecentralizedProps) {
                 className="object-cover gradient-mask-b-60 lg:hidden w-full"
               />
             </div>
-            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full">
+            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full 2xl:h-auto 2xl:max-h-[82vh] 2xl:m-auto">
               {nft &&
                 nft.map((item, index) => (
                   <div

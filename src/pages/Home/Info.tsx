@@ -27,8 +27,8 @@ export default function Nft(props: InfoProps) {
   ];
   return (
     <div className={`${props.portrait ? "h-auto" : "lg:h-screen 2xl:h-auto" } w-full  text-white text-center m-auto relative`}>
-      <div className='absolute -top-[25vw] w-full h-full'>
-        <img src={infoBg} alt="infoBg" className='w-full'/>
+      <div className='absolute -top-[25vw] w-full h-full 2xl:mt-0'>
+        <img src={infoBg} alt="infoBg" className='w-full 2xl:h-full 2xl:object-cover'/>
       </div>
       <div className="gotMaxWidthInfo w-full h-full flex flex-col gap-7 m-auto  items-center justify-center">
         {/* <!-- row --> */}

@@ -37,9 +37,9 @@ export default function Team(props: TeamProps) {
     },
   ];
   return (
-    <div className={`gotMaxWidthTeam w-full h-auto text-white text-center relative`} id="team">
+    <div className={` w-full h-auto text-white text-center relative`} id="team">
       <div id="overlay"></div>
-      <div className="w-full h-full flex flex-col justify-start gap-7 ">
+      <div className="gotMaxWidthTeam w-full h-full flex flex-col justify-start gap-7 ">
         <p className="text-3xl lg:text-[3vw] md:text-6xl leading-[150%] font-Slider">
           Lineage Protocol Team
         </p>
