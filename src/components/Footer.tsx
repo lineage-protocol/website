@@ -65,7 +65,7 @@ export default function Footer() {
                 <img
                   src={Chain.icon["Footer"]}
                   alt="logo"
-                  className="w-3/5 md:w-1/3 2xl:w-1/4"
+                  className="w-3/5 md:w-1/3 2xl:w-1/6"
                 />
               </a>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
             <div className="">
               <a              
                 href="mailto: contact@lineageprotocol.com"
-                className="uppercase  lg:text-xl !font-bold py-[0.5rem] lg:py-[0.7vw] px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
+                className="uppercase  lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
                 md:absolute md:right-10"
               >
                 Contact Us
