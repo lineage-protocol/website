@@ -56,7 +56,7 @@ export default function Decentralized(props: DecentralizedProps) {
                 className="object-cover gradient-mask-b-60 lg:hidden w-full"
               />
             </div>
-            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full 2xl:h-auto 2xl:max-h-auto 2xl:m-auto">
+            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full 2xl:h-auto 2xl:max-h-[105vh] 2xl:m-auto">
               {nft &&
                 nft.map((item, index) => (
                   <div
