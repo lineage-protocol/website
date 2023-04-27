@@ -56,7 +56,7 @@ export default function Decentralized(props: DecentralizedProps) {
                 className="object-cover gradient-mask-b-60 lg:hidden w-full"
               />
             </div>
-            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full 2xl:h-auto 2xl:max-h-[82vh] 2xl:m-auto">
+            <div className="flex flex-wrap flex-row -mx-4  pl-[4%] py-10 mt-10 lg:text-left lg:w-1/2 w-full 2xl:h-auto 2xl:max-h-auto 2xl:m-auto">
               {nft &&
                 nft.map((item, index) => (
                   <div
@@ -75,7 +75,7 @@ export default function Decentralized(props: DecentralizedProps) {
                             item.name === "Networking"
                               ? "leading-[5rem]"
                               : "leading-normal"
-                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw] 2xl:text-5xl"}`}
+                          } ${props.portrait ? "text-xl" : "text-2xl lg:text-[1.5vw] 2xl:text-4xl"}`}
                         >
                           {parse(item.name)}
                         </p>
