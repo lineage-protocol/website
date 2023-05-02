@@ -6,7 +6,7 @@ interface TeamProps {
   portrait: any;
 }
 
-const submitEmail = async (email) => {
+const submitEmail = async (email: string) => {
   try {
     const response = await axios.post('https://script.google.com/macros/s/AKfycbxibh3mBVkqYWfVhq__3LX7ZNxsphcSZ1wEZgF9a2YXM1ndg9eRtOlHk8F89-jznsFD/exec', { email });
     console.log('Email submitted:', response.data);
@@ -18,7 +18,7 @@ const submitEmail = async (email) => {
 export default function Subscribe(props: TeamProps) {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     submitEmail(email);
   };
