@@ -22,6 +22,11 @@ import Joshua from "../assets/images/homepage/team/Joshua.webp"
 import Linkedin from "../assets/images/homepage/team/ion_logo-linkedin.svg"
 // END TEAMS
 
+// PROJECTS
+import Oasis from "../assets/images/homepage/projects/oasis.webp"
+import RebelPoker from "../assets/images/homepage/projects/rebelPoker.webp"
+// END PROJECTS
+
 // INFO
 import InfoBg from "../assets/images/svg/info/bg.svg"
 // END INFO
@@ -77,6 +82,10 @@ export const info: any = {
     InfoBg: InfoBg
 }
 
+export const projects: any = {
+    Oasis:Oasis,
+    RebelPoker: RebelPoker
+}
 export const team: any = {
     Wilson:Wilson,
     Marcus: Marcus,

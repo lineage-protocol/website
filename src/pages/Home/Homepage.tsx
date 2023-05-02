@@ -6,6 +6,7 @@ import Info from "./Info";
 import Intro from "./Intro";
 import Nft from "./Nft";
 import Team from "./Team";
+import Integrated from "./Integrated";
 
 export default function Homepage() {
 
@@ -41,8 +42,9 @@ export default function Homepage() {
         <Intro portrait={portrait} />
         <Nft portrait={portrait}/>
         <Info portrait={portrait}/>
+        <Integrated portrait={portrait}/>
         <Decentralized portrait={portrait} isMac={mac}/>
-        <Team portrait={portrait}/>
+        <Team portrait={portrait}/>        
       </Master>
     </div>
   );

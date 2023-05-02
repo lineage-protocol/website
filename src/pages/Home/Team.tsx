@@ -1,4 +1,5 @@
 import * as Chain from "../../constants/Chain";
+import Subscribe from "./subscribe";
 interface TeamProps {
   portrait: any;
 }
@@ -94,6 +95,8 @@ export default function Team(props: TeamProps) {
             ))}
         </div>
       </div>
+
+      <Subscribe portrait={props.portrait}/>
 
       <div className="text-center w-full relative "></div>
     </div>

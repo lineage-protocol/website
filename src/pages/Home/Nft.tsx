@@ -1,4 +1,6 @@
 import NftMob from "../../components/Swiper/Nft";
+import VideoLineage from "../../assets/videos/LineageProtocol1.mp4";
+
 import * as Chain from "../../constants/Chain";
 
 interface NftProps {
@@ -14,6 +16,7 @@ export default function Nft(props: NftProps) {
       icon: "Sports",
       name: "Sports",
     },
+    
     {
       icon: "Loyalty",
       name: "Loyalty System",
@@ -30,7 +33,11 @@ export default function Nft(props: NftProps) {
   return (
     <div className="gotMaxWidth w-full  text-white text-center">
       <div className="w-full h-full flex flex-col justify-start gap-7  lg:mt-44 ">
-        <p className={`${props.portrait ? "lg:text-4xl" : "lg:text-7xl"} text-3xl  leading-[150%] font-Slider`}>
+        <p
+          className={`${
+            props.portrait ? "lg:text-4xl" : "lg:text-7xl"
+          } text-3xl  leading-[150%] font-Slider`}
+        >
           Unleashing the true potential of NFTs
         </p>
         <p className="lg:text-base leading-[150%] md:w-[60%] px-10 mx-auto">
@@ -43,16 +50,30 @@ export default function Nft(props: NftProps) {
         >
           How It Works
         </a>
+        <div className="container mx-auto w-full px-2 md:w-1/2">
+          <video autoPlay loop muted className=" rounded-md">
+            <source src={VideoLineage} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="relative hidden md:block">
           <img
             alt="test"
             src={Chain.lines["LineL"]}
-            className={`max-w-full h-48 mx-auto absolute  ${props.portrait ? "-top-[12.5vw] left-32 md:left-20 md:-top-[15.5vw]" : "-top-36 left-44"}`}
+            className={`max-w-full h-48 mx-auto absolute  ${
+              props.portrait
+                ? "-top-[12.5vw] left-32 md:left-20 md:-top-[15.5vw]"
+                : "-top-36 left-44"
+            }`}
           />
           <img
             alt="test"
             src={Chain.lines["LineR"]}
-            className={`max-w-full h-48 mx-auto absolute ${props.portrait ? "right-32 -top-[12.5vw] md:-top-[15.5vw] md:right-20" : "right-44 -top-36"}`}
+            className={`max-w-full h-48 mx-auto absolute ${
+              props.portrait
+                ? "right-32 -top-[12.5vw] md:-top-[15.5vw] md:right-20"
+                : "right-44 -top-36"
+            }`}
           />
         </div>
         {/* <!-- row --> */}
@@ -84,7 +105,7 @@ export default function Nft(props: NftProps) {
             ))}
         </div>
 
-        <NftMob nft={nft} type={"nft"}/>
+        <NftMob nft={nft} type={"nft"} />
       </div>
 
       <div className="text-center w-full relative "></div>
