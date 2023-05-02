@@ -1,21 +1,29 @@
-import * as Chain from "../../constants/Chain";
-import BGRight from "../../assets/images/spiral.gif";
+import React, { useState } from 'react';
+import axios from 'axios';
+import BGRight from '../../assets/images/spiral.gif';
+
 interface TeamProps {
   portrait: any;
 }
 
+const submitEmail = async (email) => {
+  try {
+    const response = await axios.post('https://script.google.com/macros/s/AKfycbxibh3mBVkqYWfVhq__3LX7ZNxsphcSZ1wEZgF9a2YXM1ndg9eRtOlHk8F89-jznsFD/exec', { email });
+    console.log('Email submitted:', response.data);
+  } catch (error) {
+    console.error('Error submitting email:', error);
+  }
+};
+
 export default function Subscribe(props: TeamProps) {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    submitEmail(email);
+  };
+
   return (
-    // <div className="gotMaxWidthTeam w-full h-full flex flex-col justify-center gap-7 mx-auto ">
-    //   <div className="flex flex-row p-10 w-1/2">
-    //     <div className="">
-    //       <img src={BGRight} alt="test" className=" spiralGif w-[60%]" />
-    //     </div>
-    //     <div className="">
-    //       <img src={BGRight} alt="test" className=" spiralGif w-[60%]" />
-    //     </div>
-    //   </div>
-    // </div>
     <section>
       <div className="mx-auto px-4 py-32 lg:flex lg:items-center w-full md:w-[80%]">
         <div className="mx-auto max-w-5xl text-center w-full ">
@@ -34,23 +42,21 @@ export default function Subscribe(props: TeamProps) {
                 </p>
 
                 <div>
-                  <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between w-full gap-3">
+                  <form onSubmit={handleSubmit} className="flex lg:flex-row flex-col items-start lg:items-center justify-between w-full gap-3">
                     <input
                       type="email"
-                      id="UserEmail"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="Email Address"
-                      className="text-black mt-1 w-full  border-gray-200 shadow-sm sm:text-sm p-3 rounded-full"
+                      className="text-black mt-1 w-full border-gray-200 shadow-sm sm:text-sm p-3 rounded-full"
                     />
-
-                    <a
-                      href="mailto: contact@lineageprotocol.com"
-                      className="uppercase  lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
-        
-                "
+                    <button
+                      type="submit"
+                      className="uppercase lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10"
                     >
                       Subscribe
-                    </a>
-                  </div>
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
