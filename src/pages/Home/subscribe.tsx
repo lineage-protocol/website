@@ -8,7 +8,7 @@ interface TeamProps {
 
 const submitEmail = async (email: string) => {
   try {
-    const response = await axios.post('https://script.google.com/macros/s/AKfycbxibh3mBVkqYWfVhq__3LX7ZNxsphcSZ1wEZgF9a2YXM1ndg9eRtOlHk8F89-jznsFD/exec', { email });
+    const response = await axios.post('https://script.google.com/macros/s/AKfycbyd29ZtSren20WDCLgzy0orSfSkkjAbRnFHqUiBOCSIa9LNsh4MsIwDrWDssGANYCeM/exec', { email });
     console.log('Email submitted:', response.data);
   } catch (error) {
     console.error('Error submitting email:', error);
