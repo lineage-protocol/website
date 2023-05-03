@@ -14,7 +14,7 @@ const ghostAPI = new GhostAdminAPI({
 
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: '*', // Replace with your React app's domain, or use '*' to allow any origin
+  origin: 'https://lineageprotocol.com', // Replace with your React app's domain, or use '*' to allow any origin
   methods: ['POST'],
   allowedHeaders: ['Content-Type']
 };
