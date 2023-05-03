@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import BGRight from '../../assets/images/spiral.gif';
+import axios from 'axios';
 
 interface TeamProps {
   portrait: any;
@@ -8,7 +8,7 @@ interface TeamProps {
 
 const submitEmail = async (email: string) => {
   try {
-    const response = await axios.post('https://script.google.com/macros/s/AKfycbxibh3mBVkqYWfVhq__3LX7ZNxsphcSZ1wEZgF9a2YXM1ndg9eRtOlHk8F89-jznsFD/exec', { email });
+    const response = await axios.post('http://localhost:3001/api/subscribe', { email });
     console.log('Email submitted:', response.data);
   } catch (error) {
     console.error('Error submitting email:', error);
