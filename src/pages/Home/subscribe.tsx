@@ -8,7 +8,7 @@ interface TeamProps {
 
 const submitEmail = async (email: string) => {
   try {
-    const response = await axios.post('http://localhost:3001/api/subscribe', { email });
+    const response = await axios.post('http://blog.lineageprotocol.com/api/subscribe', { email });
     console.log('Email submitted:', response.data);
   } catch (error) {
     console.error('Error submitting email:', error);

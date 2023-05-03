@@ -13,7 +13,14 @@ const ghostAPI = new GhostAdminAPI({
 });
 
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+  origin: '*', // Replace with your React app's domain, or use '*' to allow any origin
+  methods: ['POST'],
+  allowedHeaders: ['Content-Type']
+};
+
+app.use(cors(corsOptions));
+
 
 app.post('/api/subscribe', async (req, res) => {
   const { email } = req.body;
