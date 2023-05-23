@@ -10,31 +10,37 @@ export default function Team(props: TeamProps) {
       icon: "Wilson",
       name: "Wilson",
       subs: "CEO",
+      href: "https://www.linkedin.com/in/wilsontay/"
     },
     {
       icon: "Joel",
       name: "Joel",
       subs: "CFO",
+      href: "https://www.linkedin.com/in/joel-ng-25391850/"
     },
     {
       icon: "Iqbal",
       name: "Iqbal",
       subs: "CTO",
+      href:"https://www.linkedin.com/in/iqbalbaharum/"
     },
     {
       icon: "Marcus",
       name: "Marcus",
       subs: "COO",
+      href:"https://www.linkedin.com/in/marcus-foo-91231760/"
     },
     {
       icon: "Marek",
       name: "Marek",
       subs: "CMO",
+      href:"https://www.linkedin.com/in/marekolszewski1/"
     },
     {
       icon: "Joshua",
       name: "Joshua",
       subs: "Project Lead",
+      href:"https://www.linkedin.com/in/joshua-ng-94766599/"
     },
   ];
   return (
@@ -55,7 +61,7 @@ export default function Team(props: TeamProps) {
           {teams &&
             teams.map((item, index) => (
               <div
-                className="flex-shrink max-w-full w-1/2 sm:w-1/2 md:w-5/12 lg:w-1/6"
+                className="flex-shrink max-w-full w-1/2 sm:w-1/2 md:w-5/12 lg:w-1/6 z-10"
                 key={`about-${index}`}
               >
                 <div
@@ -78,7 +84,8 @@ export default function Team(props: TeamProps) {
                     </p>
                     <p className="text-lg font-bold mb-2 tracking-[0.04em] leading-[150%]">
                       <a
-                        href="mailto: contact@lineageprotocol.com"
+                        href={item.href}
+                        target="__blank"
                         className="inline-flex items-center lg:text-base !font-bold py-[0.5rem] lg:py-1 px-10 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full"
                       >
                         Linkedin

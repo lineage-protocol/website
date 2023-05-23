@@ -34,6 +34,8 @@ import InfoBg from "../assets/images/svg/info/bg.svg"
 // Social
 import Discord from "../assets/images/svg/social/discord.svg"
 import Twitter from "../assets/images/svg/social/twitter.svg"
+import Medium from "../assets/images/svg/social/medium.svg"
+import linkedin from "../assets/images/svg/social/linkedin.svg"
 import Github from "../assets/images/svg/social/github.svg"
 // end social
 
@@ -99,7 +101,9 @@ export const team: any = {
 export const social: any = {
     Discord: Discord,
     Twitter: Twitter,
-    Github: Github
+    Github: Github,
+    Medium:Medium,
+    linkedin:linkedin
 }
 
 export const games: any = {

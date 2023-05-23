@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
           <div className="">
             <div className="">
-              <a              
+              <a
                 href="mailto: contact@lineageprotocol.com"
                 className="uppercase  lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 px-10 lg:px-[1.8vw]   font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10 
                 md:absolute md:right-10"
@@ -89,29 +89,30 @@ export default function Footer() {
             </div>
           </div>
           <div className="w-full md:w-1/2 px-4 mx-auto text-center">
-            <div className="flex mt-2 space-x-6 text-gray-600 justify-end">
-              <a
-                className="hover:opacity-75"
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Chain.social["Twitter"]} alt="logo" className="" />
-              </a>
+            <div className="flex mt-2 space-x-2 text-gray-600 justify-end">
               <a
                 className="hover:opacity-75"
                 href="https://twitter.com/LineageProtocol"
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img src={Chain.social["Github"]} alt="logo" className="" /> */}
+                <img src={Chain.social["Twitter"]} alt="logo" className="scale-[1.3]" />
               </a>
               <a
                 className="hover:opacity-75"
-                href="#"
+                href="https://www.linkedin.com/company/nverselabs/"
                 target="_blank"
                 rel="noreferrer"
               >
+                <img src={Chain.social["linkedin"]} alt="logo" className="scale-[1.3]" />
+              </a>
+              <a
+                className="hover:opacity-75"
+                href="https://lineageprotocol.medium.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Chain.social["Medium"]} alt="logo" className="mt-[0.1rem] scale-[1.3]" />
                 {/* <img src={Chain.social["Discord"]} alt="logo" className="" /> */}
               </a>
             </div>
