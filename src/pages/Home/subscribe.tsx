@@ -43,19 +43,19 @@ export default function Subscribe(props: TeamProps) {
 
                 <div>
                   <form onSubmit={handleSubmit} className="flex lg:flex-row flex-col items-start lg:items-center justify-between w-full gap-3">
-                    <input
+                    {/* <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Email Address"
                       className="text-black mt-1 w-full border-gray-200 shadow-sm sm:text-sm p-3 rounded-full"
-                    />
-                    <button
-                      type="submit"
+                    /> */}
+                    <a href='https://bit.ly/lineage-newsletter'
+                    target='__blank'
                       className="uppercase lg:text-base !font-bold py-[0.5rem] lg:py-[0.7vw] 2xl:py-4 lg:px-[1.8vw] font-Slider gotShadow border border-white rounded-full lg:w-auto lg:max-w-[60%] text-center md:text-xl px-10"
                     >
                       Subscribe
-                    </button>
+                    </a>
                   </form>
                 </div>
               </div>
